@@ -1,0 +1,605 @@
+// MAIN CARD
+.main-hosting-card {
+    padding: 9px 15px 16px !important;
+    position: relative;
+    background-color: $white-color;
+    border-radius: 10px;
+    border: none;
+    margin: 0 15px;
+    .card-img-top {
+        border-radius: 10px;
+        height: 135px;
+        width: 100%;
+        max-height: 135px;
+        object-fit: cover;
+    }
+    .persons-nums {
+        position: absolute;
+        top: 115px;
+        left: 20px;
+        border-radius: 7px;
+        background-color: $white-color;
+        padding: 7px 20px;
+        font: {
+            size: 12px;
+            weight: 300
+        }
+    }
+    .static-persons-nums {
+        font: {
+            size: 12px;
+            weight: 300
+        }
+    }
+    .card-body {
+        padding: 8px 0 0;
+        .card-title {
+            a {
+                font: {
+                    size: 15px;
+                    weight: normal
+                }
+                color: $black-color;
+            }
+            margin-bottom: 6px;
+        }
+        .card-address {
+            margin-bottom: 12px;
+            .address-icon {
+                margin-left: 7px;
+                img {
+                    display: inline !important;
+                }
+            }
+            .address-text {
+                font: {
+                    size: 11px;
+                    weight: normal
+                }
+                color: $gray-color-6;
+            }
+        }
+        .type-and-price {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .build-type {
+                font: {
+                    size: 11px;
+                    weight: normal
+                }
+            }
+            .build-price {
+                .price {
+                    font: {
+                        size: 22px;
+                        weight: normal
+                    }
+                }
+                .currency {
+                    color: $gray-color-6;
+                    font: {
+                        size: 13px;
+                        weight: 300
+                    }
+                }
+            }
+        }
+        .renter-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 13px;
+            border-top: 1px solid #D9D9D9;
+            margin-top: 18.5px;
+            .renter-img {
+                margin-left: 11px;
+                img {
+                    width: 37px;
+                    height: 37px;
+                    object-fit: cover;
+                    border-radius: 7px;
+                }
+            }
+            .renter-name-and-address {
+                .renter-name {
+                    display: block;
+                    font: {
+                        size: 13px;
+                        weight: normal
+                    }
+                }
+                .renter-address {
+                    display: block;
+                    font: {
+                        size: 11px;
+                        weight: 300
+                    }
+                    color: $gray-color-6;
+                }
+            }
+            .quick-contact {
+                display: flex;
+                margin-right: auto;
+                a {
+                    &:not(:last-child) {
+                        margin-left: 7px;
+                    }
+                    img {
+                        width: 28.5px;
+                        height: 28.5px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .favorite-link {
+            position: absolute;
+            right: 30px;
+            top: 24px;
+            width: 37px;
+            height: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: $white-color;
+        }
+        .simple-view-info {
+            .simple-price {
+                margin-bottom: 7px;
+                .price {
+                    font: {
+                        size: 22px;
+                        weight: normal
+                    }
+                }
+                .currency {
+                    font: {
+                        size: 13px;
+                        weight: 300
+                    }
+                }
+            }
+            .hotel-name {
+                font: {
+                    size: 15px;
+                    weight: normal
+                }
+                margin-bottom: 8px;
+            }
+            .hotel-details {
+                font: {
+                    size: 16px;
+                    weight: 300
+                }
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.secondary-card {
+        padding: 0 !important;
+        .card-body {
+            padding: 8px 15px 16px !important;
+        }
+        .card-img-top {
+            border-radius: 10px 10px 0 0;
+        }
+    }
+    &.flip-card {
+        overflow: hidden;
+        .card-img-top {
+            border-radius: 10px;
+            transform: rotate(-18deg) translate(60px, -65px);
+            height: 200px;
+            max-height: 200px;
+            width: 120%;
+        }
+        .card-body {
+            margin-top: -65px;
+        }
+    }
+    &.with-seperator {
+        .card-body {
+            .type-and-price {
+                display: block;
+                .build-type {
+                    &::after {
+                        content: "|";
+                        color: $black-color;
+                        margin: 0 10px;
+                        font-size: 18px;
+                    }
+                    font: {
+                        size: 15px;
+                        weight: 300
+                    }
+                }
+                .build-price {
+                    .price {
+                        font: {
+                            size: 20px;
+                            weight: normal
+                        }
+                    }
+                    .currency {
+                        color: $gray-color-6;
+                        font: {
+                            size: 17px;
+                            weight: 300
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.with-persons-nums {
+        .card-body {
+            margin-top: -85px;
+        }
+    }
+    &.bottom-section-for-student {
+        .edu-period {
+            border-top: 1px solid;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 13px;
+            border-top: 1px solid #D9D9D9;
+            margin-top: 18.5px;
+            > span {
+                &.edu-period-label {
+                    font: {
+                        size: 14px;
+                        weight: normal
+                    };
+                }
+                &.edu-period-numbers {
+                    font: {
+                        size: 16px;
+                        weight: normal
+                    }
+                }
+            }
+        }
+    }
+}
+
+// IMAGE CARD
+.hosting-img-card,
+.hosting-img-slider-3 {
+    height: 245px;
+    border-radius: 10px;
+    // overflow: hidden;
+    border: 0;
+    position: relative;
+    margin: 0 15px;
+    > img.card-img {
+        height: 245px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    > .overlay-info-card {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 12px 15px 16px;
+        border-radius: 0 0 10px 10px;
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            backdrop-filter: blur(4px);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        > h5 {
+            margin-bottom: 9px;
+            a {
+                font: {
+                    size: 20px;
+                    weight: normal
+                }
+                color: $black-color;
+            }
+        }
+        .total-buildings {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .total-buildings-label {
+                font: {
+                    size: 13px;
+                    weight: normal
+                }
+            }
+            .total-buildings-count {
+                font: {
+                    size: 20px;
+                    weight: normal
+                }
+            }
+        }
+    }
+}
+
+// CARD WITH FULL WIDTH
+.hosting-card-with-full-width {
+    background-color: $white-color;
+    padding: 22px;
+    border-radius: 15px;
+    margin-bottom: 21px;
+    .unique-card-img {
+        overflow: hidden;
+        img {
+            width: 100%;
+            max-height: 147px;
+            min-height: 147px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+    }
+    .unique-card-title {
+        a {
+            color: $black-color;
+            font: {
+                size: 23px;
+                weight: normal
+            }
+        }
+        margin-bottom: 12px;
+    }
+    .unique-card-rate {
+        margin-bottom: 14px;
+        font: {
+            size: 16px;
+            weight: 300
+        }
+        > i {
+            margin-left: 8px;
+        }
+    }
+    .unique-card-address {
+        margin-bottom: 14px;
+        font: {
+            size: 16px;
+            weight: normal
+        }
+    }
+    .unique-card-romms-and-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .rooms,
+        .price-and-currency .currency {
+            font: {
+                size: 16px;
+                weight: normal
+            }
+        }
+        .price-and-currency {
+            .price {
+                font: {
+                    size: 23px;
+                    weight: normal
+                }
+            }
+        }
+    }
+}
+
+// BOOKING CARD
+.booking-card {
+    border-radius: 15px;
+    background-color: $white-color;
+    padding: 30px 21px;
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    .booking-img {
+        overflow: hidden;
+        img {
+            border-radius: 15px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .booking-title-and-rate {
+        font: {
+            size: 21px;
+            weight: normal;
+        }
+        margin-bottom: 13px;
+        .booking-title {
+            color: $black-color;
+        }
+        .booking-rate {
+            font-weight: 300;
+            i {
+                font-weight: 300;
+            }
+        }
+    }
+    .booking-address {
+        color: $gray-color-2;
+        font: {
+            size: 18px;
+            weight: normal;
+        }
+        margin-bottom: 12px;
+    }
+    .booking-leave-and-arrival {
+        .arrive {
+            position: relative;
+            &::after {
+                content: "";
+                height: 100%;
+                width: 1px;
+                display: inline-block;
+                background-color: $black-color;
+                position: absolute;
+                left: 15px;
+                top: 50%;
+                transform: translateY(-40%);
+            }
+        }
+        h5 {
+            color: $gray-color-7;
+            font: {
+                size: 18px;
+                weight: normal;
+            }
+        }
+        p {
+            color: $gray-color-8;
+            font: {
+                size: 14px;
+                weight: normal;
+            }
+            margin: 0;
+        }
+    }
+    .booking-actions {
+        .booking-edit,
+        .cancel-booking {
+            display: block;
+            width: 145px;
+        }
+        .booking-edit {
+            margin-bottom: 25px;
+        }
+        .cancel-booking {
+            color: $danger-color;
+            font: {
+                size: 18px;
+                weight: normal
+            }
+            text-decoration: underline !important;
+            text-underline-position: under;
+        }
+    }
+}
+
+//  NOTIFICATION CARD
+.notification-card {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    border-radius: 15px;
+    &:not(:last-child) {
+        margin-bottom: 18px;
+    }
+    .notification-status-img {
+        margin-left: 21px;
+        img {
+            width: 38px;
+            height: 38px;
+            object-fit: cover;
+        }
+    }
+    .notification-content {
+        .notification-title {
+            font: {
+                size: 18px;
+                weight: normal
+            }
+        }
+        .notification-time {
+            img {
+                width: 19px;
+                height: 19px;
+                object-fit: cover;
+                margin-left: 8px;
+            }
+            span {
+                font: {
+                    size: 13px;
+                    weight: 300
+                }
+                color: $gray-color-2;
+            }
+        }
+    }
+}
+
+// financial-transaction-card
+.financial-transaction-card {
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .percentage {
+        width: 87px;
+        height: 60px;
+        border-radius: 10px;
+        margin-left: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        direction: ltr;
+        font: {
+            size: 20px;
+            weight: normal
+        }
+        color: $white-color;
+        &.danger {
+            background-color: $danger-color;
+        }
+        &.success {
+            background-color: $main-light-color;
+        }
+    }
+    .financial-transaction-info {
+        position: relative;
+        flex: auto;
+        > h5 {
+            font: {
+                size: 19px;
+                weight: normal
+            }
+            margin-bottom: 10px;
+        }
+        .since-time {
+            img {
+                width: 19px;
+                height: 19px;
+                object-fit: cover;
+                margin-left: 11px;
+            }
+            span {
+                font: {
+                    size: 17px;
+                    weight: 300
+                }
+            }
+        }
+        .success-absolute-label {
+            position: absolute;
+            left: 0;
+            top: 0;
+            direction: ltr;
+            font: {
+                size: 19px
+            }
+        }
+    }
+}
+
+// Shared 
+.rate-absolute {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    background-color: $white-color;
+    border-radius: 30px;
+    padding: 0 15px 2px;
+    i, .rate-value {
+        font: {
+            size: 12px;
+            weight: normal
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.book-now,
+.empty-notifications,
+.empty-favorite {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .book-now-img,
+    .empty-notifications-img,
+    .empty-favorite-img {
+        width: 280px;
+        max-width: 280px;
+        height: auto;
+        margin: auto;
+    }
+    .empty-notifications-img,
+    .empty-favorite-img {
+        margin-bottom: 44px;
+    }
+    .book-now-label,
+    .empty-notifications-label,
+    .empty-favorite-label {
+        font: {
+            size: 27px;
+            weight: normal
+        }
+        margin: 21.5px 0 27px;
+        color: #A6A6A6;
+    }
+    .empty-notifications-label,
+    .empty-favorite-label {
+        max-width: 325px;
+        margin: auto;
+        line-height: 1.5;
+    }
+    .book-now-btn {
+        background-color: $main-light-color;
+        width: 255px;
+        font: {
+            size: 16px;
+            weight: normal
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.terms-and-who-are-us {
+    margin-top: 140px;
+    .terms-main-title {
+        font: {
+            size: 27px;
+            weight: normal
+        }
+        margin-bottom: 60px;
+        color: $gray-color-8;
+    }
+    .who-are-us-title {
+        color: $gray-color-8;
+        font: {
+            size: 27px;
+            weight: normal
+        }
+        margin-bottom: 24px;
+    }
+    .who-are-us-img {
+        overflow: hidden;
+        margin-bottom: 26px;
+        img {
+            width: 510px;
+            height: 323px;
+            object-fit: cover;
+        }
+    }
+    .terms-box {
+        margin-bottom: 40px;
+        h4 {
+            font: {
+                size: 20px;
+                weight: normal
+            }
+            color: $gray-color-8;
+            margin-bottom: 15px;
+        }
+        p {
+            margin: 0;
+            padding-right: 20px;
+            font: {
+                size: 17px;
+                weight: 300
+            }
+            color: #707070;
+        }
+    }
+}

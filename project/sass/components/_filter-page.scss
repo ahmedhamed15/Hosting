@@ -1,0 +1,475 @@
+// Arrival and leave time
+.arrival-and-leave-time {
+    background-color: $white-color;
+    border-radius: 15px;
+    padding: 35px;
+    .row {
+        justify-content: center;
+        align-items: center;
+    }
+    .time-wrapper {
+        padding-right: 60px;
+        .time-label {
+            font: {
+                size: 21px;
+                weight: normal
+            }
+            margin-bottom: 11px;
+        }
+        .time-value {
+            font: {
+                size: 18px;
+                weight: 300
+            }
+        }
+    }
+    .time-edit-btn {
+        background-color: $main-light-color;
+        padding: 10px 36px;
+        font: {
+            size: 20px;
+            weight: normal;
+        }
+    }
+}
+
+
+// Navigation links for filter
+.navigation-links-tab {
+    border-radius: 15px;
+    padding: 7px;
+    background-color: $white-color;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    &.without-margin-top {
+        margin-top: 0;
+    }
+    .navigation-link {
+        display: inline-block;
+        padding: 15px;
+        width: 100%;
+        border-radius: 15px;
+        color: $black-color;
+        font: {
+            size: 22px;
+            weight: normal
+        }
+        &.active,
+        &:hover {
+            background-color: $main-color;
+            color: $white-color;
+        }
+    }
+}
+
+
+// Body of filter page
+.body-of-filter-page {
+    .main-hosting-card {
+        margin: 0 0 24px;
+        padding: 9px 9px 16px !important;
+        &.without-padding {
+            padding: 0 0 10px !important;
+            .card-body {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+        }
+        .card-body {
+            padding-left: 6px !important;
+            padding-right: 6px !important;
+        }
+        .rate-absolute {
+            left: 22px;
+            top: 12px;
+        }
+    }
+}
+
+
+// Pagination
+.hosting-pagination {
+    margin-top: 50px;
+    .pagination {
+        justify-content: center;
+        .page-link {
+            width: 75px;
+            height: 62px;
+            line-height: 43px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: $gray-color-4;
+            border-radius: 10px;
+            border: none;
+            color: $black-color;
+            font: {
+                size: 30px;
+                weight: normal
+            }
+            &.active,
+            &:hover {
+                background-color: $main-color;
+                color: $white-color;
+            }
+            &.other-pages {
+                background: none;
+                width: 62px;
+                border-radius: 50%;
+                border: 1px solid $gray-color-2;
+                color: $gray-color-2;
+                &.right-link {
+                    margin-left: 50px;
+                }
+                &.left-link {
+                    margin-right: 50px;
+                }
+                i {
+                    font-size: 20px;
+                    position: relative;
+                    top: -3px;
+                }
+            }
+        }
+    }
+}
+
+
+// Filter
+.building-filter {
+    padding: 24px 16px;
+    background-color: $white-color;
+    border-radius: 15px;
+    .filter-title {
+        font: {
+            size: 17px;
+            weight: normal
+        }
+        border-bottom: 1px solid #CCCCCC;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    form {
+        label {
+            color: $gray-color-5;
+            font: {
+                size: 14px;
+                weight: normal
+            }
+            margin-bottom: 14px;
+        }
+        .form-group {
+            margin-bottom: 29px;
+        }
+        input,
+        button {
+            height: 45px;
+            border: 1px solid #E8ECEF !important;
+            border-radius: 5px;
+        }
+        .dropdown {
+            button {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: #495057;
+            }
+        }
+        button {
+            &.bs-placeholder {
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+        .bootstrap-select {
+            &.dropdown {
+                border: none !important;
+                button {
+                    &:active,
+                    &:focus {
+                        outline: none !important;
+                        background: none;
+                    }
+                }
+            }
+            .dropdown-item.active, 
+            .dropdown-item:active {
+                background-color: $main-color;
+                outline: none !important;
+            }
+            input {
+                &:focus {
+                    box-shadow: 0 5px 22px -12px $main-color;
+                }
+            }
+        }
+        .btn-secondary.dropdown-toggle {
+            background: none;
+            color: #495057;
+            &:focus,
+            &:active {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .special-dropdown.show {
+            top: 45px !important;
+            width: 300px;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            padding-top: 30px;
+            &:after {
+                content: "";
+                width: 55px;
+                height: 2.5px;
+                background-color: $black-color;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: inline-block;
+                position: absolute;
+            }
+        }
+        .counters {
+            .single-counter {
+                margin-bottom: 35px;
+                > h5 {
+                    margin-bottom: 22px;
+                    font: {
+                        size: 21px;
+                        weight: normal
+                    };
+                }
+                button {
+                    width: 39px !important;
+                    height: 39px;
+                    border-radius: 50%;
+                    background-image: linear-gradient(to bottom right, #25A84C , #72BF44);
+                    color: $white-color;
+                    line-height: 34px;
+                    cursor: pointer;
+                    font: {
+                        size: 20px;
+                        weight: 800
+                    }
+                    &.increase-counter {
+                        margin-left: 20px;
+                    }
+                    &.decrease-counter {
+                        margin-right: 20px;
+                    }
+                    &.save-counter {
+                        width: 230px !important;
+                        border-radius: 20px !important;
+                        margin: auto;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 30px;
+                        font: {
+                            size: 18px;
+                            weight: normal
+                        }
+                    }
+                    &:focus,
+                    &:active {
+                        outline: none !important;
+                    }
+                }
+                input,
+                .counter-label {
+                    font-size: 18px;
+                }
+                input {
+                    max-width: 40px;
+                    width: max-content;
+                    border: none !important;
+                    background: none;
+                }
+            }
+        }
+        .date-from-to {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 10px;
+                top: 49px;
+                width: 24px;
+                height: 24px;
+                background: url(../images/Icons/date.svg) no-repeat center center;
+                display: inline-block;
+            }
+        }
+        .with-input-radio {
+            > label {
+                display: block;
+            }
+            > span {
+                &:first-of-type {
+                    margin-left: 31px;
+                    display: inline-block;
+                }
+            }
+            input {
+                display: none;
+            }
+            /* The container */
+            .form-container {
+                display: block;
+                position: relative;
+                padding-right: 22px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 300;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                display: inline;
+            }
+            
+            /* Hide the browser's default checkbox */
+            .form-container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+            
+            /* Create a custom checkbox */
+            .checkmark {
+                position: absolute;
+                top: 3px;
+                right: 0;
+                height: 17px;
+                width: 17px;
+                background-color: #E8ECEF;
+                border-radius: 50%;
+            }
+            
+            /* On mouse-over, add a grey background color */
+            .form-container:hover input ~ .checkmark {
+                background-color: #ccc;
+            }
+            
+            /* When the checkbox is checked, add a blue background */
+            .form-container input:checked ~ .checkmark {
+                background-color: $main-color;
+            }
+            
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+            
+            /* Show the checkmark when checked */
+            .form-container input:checked ~ .checkmark:after {
+                display: block;
+            }
+            
+            /* Style the checkmark/indicator */
+            .form-container .checkmark:after {
+                left: 3.5px;
+                top: 3.5px;
+                width: 10px;
+                height: 10px;
+                background-color: #E8ECEF;
+                border-radius: 50%;
+            }
+        }
+        .rate-piece {
+            > label {
+                display: block;
+            }
+            a {
+                color: $main-color;
+                margin-left: 5px;
+            }
+        }
+        .bootstrap-select.show-tick {
+            .dropdown-menu {
+                .selected {
+                    span.check-mark {
+                        left: 15px;
+                        right: auto;
+                        width: 24px;
+                        height: 24px;
+                        border: 1px solid $main-color;
+                        border-radius: 6px;
+                        &:after {
+                            border-width: 0 2px 2px 0;
+                            position: relative;
+                            left: -8.5px;
+                            top: 3px;
+                            width: 6px;
+                            height: 13px;
+                            border-color: $main-color;
+                        }
+                    }
+                }
+                li {
+                    a {
+                        span.text {
+                            margin-right: 0;
+                            margin-left: 34px;
+                        }
+                    }
+                }
+            }
+        }
+        .filter-btn {
+            width: 100%;
+        }
+        .range-style {
+            direction: ltr;
+            div {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// Basic Filter 
+.basic-filter {
+    border-radius: 15px;
+    padding: 18px 10px;
+    min-height: 450px;
+    .basic-filter-title {
+        margin-bottom: 23px;
+        font: {
+            size: 21px;
+            weight: normal
+        }
+    }
+    .links-of-basic-filters {
+        padding: 0;
+        li {
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            a {
+                padding: 14px 24px;
+                border-radius: 15px;
+                width: 100%;
+                display: block;
+                background-color: $white-color;
+                color: $gray-color-8;
+                &.active,
+                &:hover {
+                    background-color: $main-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
+
+// General
+.content-with-filter {
+    margin-top: 60px;
+}

@@ -1,0 +1,32 @@
+.main-section-info.secondary-pages {
+    margin-bottom: 31px !important;
+    margin-top: 71px;
+    h2 {
+        &:after {
+            right: 0 !important
+        }
+    }
+}
+
+.secondary-slider,
+.hosting-img-slider,
+.hosting-img-slider-3 {
+    .slick-track {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .slick-list {
+        padding-bottom: 25px;
+    }
+    .slick-arrow {
+        top: -70px !important;
+        transform: translateY(0) !important;
+        &.slick-next {
+            left: 100px!important;
+            right: auto !important;
+        }
+        &.slick-prev {
+            left: 14px!important;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.main-navbar {
+    height: 70px;
+    background-color: #FFF !important;
+    box-shadow: 0 2px 15px rgba(21,31,52,.2);
+    .navbar-brand {
+        margin-right: 0;
+        margin-left: 90px;
+        > img {
+            width: 52px;
+            height: auto; 
+        }
+    }
+    .navbar-collapse {
+        > ul {
+            &.navbar-nav {
+                padding: 0;
+            }
+            li {
+                &:not(:last-child) {
+                    margin-left: 35px;
+                }
+                a {
+                    font: {
+                        size: 18px;
+                        weight: normal
+                    }
+                    color: $black-color !important;
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;  
+                    @extend .trans-effect; 
+                    &:hover {
+                        color: $main-color !important;
+                    }
+                }
+                &.active {
+                    a {
+                        color: $main-color !important;
+                    }
+                }
+            }
+        }
+    }
+    .nav-search-form {
+        position: relative;
+        .search-input {
+            width: 0;
+            padding: 0;
+            margin-right: 0 !important;
+            @extend .trans-effect;
+            border: none;
+            border-radius: 20px;
+            &.active {
+                width: 250px;
+                border: 1px solid gray;
+                padding: 10px;
+            }
+        }
+        .search-submit {
+            position: absolute;
+            left: 0; 
+            border: none;
+            &:hover,
+            &:active,
+            &:focus {
+                background: none;
+                border: none;
+                box-shadow: none !important;
+                outline: 0;
+            }
+        }
+    }
+    .notifications-link {
+        margin-right: 27px;
+    }
+    .login-and-register-link {
+        margin-right: 70px;
+    }
+    .user-profile-info {
+        background: no-repeat;
+        border: none;
+        color: $black-color;
+        margin-right: 35px;
+        &:active,
+        &:focus,
+        &:hover {
+            background: none !important;
+            box-shadow: none !important;
+            color: $black-color;
+        }
+        .user-img {
+            width: 48px;
+            height: 48px;
+            min-width: 40px;
+            min-height: 40px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        .user-name {
+            color: $gray-color-1;
+            margin-left: 10px;
+            font: {
+                size: 17px;
+                weight: 'normal'
+            }
+        }
+    }
+}

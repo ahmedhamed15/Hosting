@@ -1,0 +1,88 @@
+.financial-transactions {
+    margin-top: 140px; 
+    .all-mony-and-charging {
+        margin-bottom: 35px;
+        .all-mony {
+            border-radius: 15px;
+            padding: 22px 44px;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            &:after,
+            &:before {
+                content: "";
+                width: 62px;
+                height: 62px;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+            }
+            &:after {
+                background-color: $main-color;
+                bottom: 15px;
+                left: -15px;
+            }
+            &:before {
+                background-color: #ECEAEA;
+                bottom: -4px;
+                left: -24px;
+            }
+            h5 {
+                font: {
+                    size: 20px;
+                    weight: normal;
+                }
+                margin-bottom: 15px;
+            }
+            p {
+                margin: 0;
+                margin-right: 38px;
+                .mony {
+                    font: {
+                        size: 27px;
+                        weight: normal;
+                    }
+                }
+                .currency {
+                    font: {
+                        size: 18px;
+                        weight: normal;
+                    }
+                }
+            }
+        }
+        .mony-charging {
+            border-radius: 15px;
+            padding: 22px 44px;
+            height: 100%;
+            > h5 {
+                font: {
+                    size: 20px;
+                    weight: normal;
+                }
+                margin-bottom: 15px;
+            }
+            .mony-charging-link {
+                color: $black-color;
+                background-color: rgba($main-color, 0.5);
+                border-radius: 50%;
+                display: inline-flex;
+                width: 35px;
+                height: 35px;
+                justify-content: center;
+                align-self: center;
+                i {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .financial-transactions-title {
+        margin-bottom: 22px;
+        font: {
+            size: 24px;
+            weight: normal
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.bookings {
+    margin-top: 140px;
+    .happy-trips {
+        padding: 70px 70px 70px 250px;
+        border-radius: 15px;
+        font: {
+            size: 31px;
+            weight: normal
+        }
+        position: relative;
+        margin-bottom: 24px;
+        &:after {
+            content: "";
+            background: url('../images/Global/book-now.svg') no-repeat center center;
+            background-size: contain;
+            width: 178px;
+            height: 178px;
+            display: inline-block;
+            position: absolute;
+            left: 96px;
+            top: -30px;
+        }
+    }
+}

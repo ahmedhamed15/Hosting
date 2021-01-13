@@ -1,0 +1,12 @@
+<svg id="profile" xmlns="http://www.w3.org/2000/svg" width="38.44" height="38.44" viewBox="0 0 38.44 38.44">
+  <path id="Path_1404" data-name="Path 1404" d="M31.232,38.44H7.207A7.207,7.207,0,0,1,0,31.232V7.207A7.207,7.207,0,0,1,7.207,0H31.232A7.207,7.207,0,0,1,38.44,7.207V31.232A7.207,7.207,0,0,1,31.232,38.44Z" fill="#fff9dd"/>
+  <path id="Path_1405" data-name="Path 1405" d="M25.818,7.667H9.4A1.4,1.4,0,0,0,8,9.068v2a1.4,1.4,0,0,0,1.4,1.4H25.819a1.4,1.4,0,0,0,1.4-1.4v-2A1.4,1.4,0,0,0,25.818,7.667Z" transform="translate(1.61 1.543)" fill="#ffd200"/>
+  <g id="Group_479" data-name="Group 479" transform="translate(9.61 16.016)">
+    <path id="Path_1406" data-name="Path 1406" d="M8.6,14.534h5.2a.6.6,0,1,0,0-1.2H8.6a.6.6,0,1,0,0,1.2Z" transform="translate(-8 -13.333)" fill="#ffe777"/>
+    <path id="Path_1407" data-name="Path 1407" d="M8.6,16.534h5.2a.6.6,0,0,0,0-1.2H8.6a.6.6,0,0,0,0,1.2Z" transform="translate(-8 -12.931)" fill="#ffe777"/>
+    <path id="Path_1408" data-name="Path 1408" d="M8.6,18.534h5.2a.6.6,0,0,0,0-1.2H8.6a.6.6,0,1,0,0,1.2Z" transform="translate(-8 -12.528)" fill="#ffe777"/>
+    <path id="Path_1409" data-name="Path 1409" d="M8.6,20.534h5.2a.6.6,0,1,0,0-1.2H8.6a.6.6,0,1,0,0,1.2Z" transform="translate(-8 -12.126)" fill="#ffe777"/>
+    <path id="Path_1410" data-name="Path 1410" d="M8.6,22.534h5.2a.6.6,0,0,0,0-1.2H8.6a.6.6,0,1,0,0,1.2Z" transform="translate(-8 -11.723)" fill="#ffe777"/>
+  </g>
+  <path id="Path_1411" data-name="Path 1411" d="M24.477,13.333H16.068a1.409,1.409,0,0,0-1.4,1.4v8.009a1.409,1.409,0,0,0,1.4,1.4h8.409a1.409,1.409,0,0,0,1.4-1.4V14.735A1.409,1.409,0,0,0,24.477,13.333Zm-4.2,2.8a1.2,1.2,0,1,1-1.2,1.2A1.2,1.2,0,0,1,20.272,16.137Zm2.4,5a.606.606,0,0,1-.6.6h-3.6a.606.606,0,0,1-.6-.6v-.3a1.6,1.6,0,0,1,1.682-1.505h1.441a1.6,1.6,0,0,1,1.682,1.505Z" transform="translate(2.951 2.683)" fill="#ffd200"/>
+</svg>

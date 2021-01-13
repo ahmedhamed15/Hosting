@@ -1,0 +1,100 @@
+.main-header {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient($white-color, $gray-color-3);
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: auto;
+        bottom: 0;
+        top: 0;
+        width: 40%;
+        height: 100%;
+        background: url('../images/Header/header-main-img.svg') no-repeat left center fixed;
+        background-size: cover;
+    }
+    > div,
+    > div > .row {
+        height: 100%;
+    }
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        .header-info {
+            margin-top: 70px;
+            h1 {
+                font: {
+                    size: 46px;
+                    weight: 400 
+                };
+                &:after {
+                    content: "";
+                    background: url('../images/Header/dream-home.svg') no-repeat center center;
+                    background-size: cover;
+                    width: 48px;
+                    height: 48px;
+                    display: inline-block;
+                }
+            }
+            p {
+                font: {
+                    size: 32px;
+                    weight: normal 
+                };
+                margin-bottom: 50px;
+            }
+        }
+        .all-services {
+            .col-md-4 {
+                flex: 0 0 auto;
+                max-width: fit-content;
+            }
+            .header-service {
+                border-radius: 20px;
+                background-color: $white-color;
+                width: 154px;
+                height: 154px;
+                margin-bottom: 28px;
+                a {
+                    color: $black-color;
+                    padding: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between; 
+                    height: 100%;
+                }
+                h4 {
+                    font: {
+                        size: 20px;
+                        weight: 400;
+                    }
+                }
+                .img-header-service {
+                    text-align: left;
+                    img {
+                        object-fit: cover;
+                    }
+                    &.shared-home {
+                        position: relative; 
+                        &:after {
+                            content: "";
+                            background: url(../images/Header/users.svg) no-repeat center center;
+                            background-size: cover;
+                            width: 17px;
+                            height: 15px;
+                            display: block;
+                            position: absolute;
+                            top: calc(50% - 5px);
+                            left: 63px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-main-img {
+        
+    }
+}

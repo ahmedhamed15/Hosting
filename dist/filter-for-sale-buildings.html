@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="ar">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title> Hosting - Sale Building With Filter </title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Google font -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&display=swap&subset=arabic,latin-ext" rel="stylesheet"> -->
+
+        <!-- Animate plugin -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Fontawesome 5 -->
+        <link rel="stylesheet" href="css/all.min.css">
+
+        <!-- Slick slider -->
+        <link rel="stylesheet" href="css/slick.css">
+
+        <!-- Bootstrap select -->
+        <link rel="stylesheet" href="css/bootstrap-select.min.css">
+
+        <!-- Daterangepicker  -->
+        <link rel="stylesheet" href="css/daterangepicker.css">
+
+        <!-- Freshslider Plugin -->
+        <link rel="stylesheet" href="css//freshslider.min.css">
+
+        <!-- Style file -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/Global/main-logo.svg">
+
+    </head>
+    <body>
+
+
+        <!-- START :: NAVBAR --> 
+        <nav class="navbar main-navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/Global/main-logo.svg" alt="Hosting" title="Hosting">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Main menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">عقارات مميزة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تواصل معنا</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search form -->
+                    <form class="form-inline nav-search-form my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 search-input" type="search" placeholder="بحث..." aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 search-submit">
+                            <img src="images/Global/search.svg" alt="">
+                        </button>
+                    </form>
+
+                    <!-- Notifications Link -->
+                    <a href="#" class="notifications-link">
+                        <img src="images/Global/bell.svg" alt="">
+                    </a>
+
+                    <!-- Signin/Signup -->
+                    <a href="#" class="login-and-register-link main-btn"> دخول/تسجيل </a>
+
+                </div>
+            </div>
+        </nav>
+        <!-- END :: NAVBAR --> 
+
+
+        <!-- START :: DETAILED MAIN HEADER -->
+        <header class="detailed-main-header">
+            <div class="container">
+                <div class="detailed-header-options">
+                    <h3 class="h3 detailed-header-title text-center"> شراء عقارات </h3>
+                    <div class="all-options-of-detailed-header">
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label> المدينة </label>
+                                        <select class="form-control">
+                                            <option value=""> القاهرة </option>
+                                            <option value=""> الاسكندرية </option>
+                                            <option value=""> المنصورة </option>
+                                            <option value=""> دمياط </option>
+                                            <option value=""> كفر الشيخ </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label> نوع العقار </label>
+                                        <select class="form-control">
+                                            <option value=""> شقة </option>
+                                            <option value=""> فيلا </option>
+                                            <option value=""> استوديو </option>
+                                            <option value=""> عمارة </option>
+                                            <option value=""> قصر </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-group">
+                                        <label> الميزانية </label>
+                                        <div class="dropdown detailed-dropwdown-header">
+                                            <button class="btn btn-secondary dropdown-toggle from-to-mony" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                الميزانية
+                                            </button>
+                                            <div class="dropdown-menu special-dropdown" aria-labelledby="dropdownMenuButton">
+                                              <div class="counters">
+                                                <div class="single-counter text-center">
+                                                    <h5 class="h5"> من </h5>
+                                                    <div class="form-group">
+                                                        <button class="for-counter increase-counter d-inline" data-count="100"> + </button>
+                                                        <input type="text" class="counter-val counter-val-1" value="0" disabled>
+                                                        <span class="counter-label"> جنيه </span>
+                                                        <button class="for-counter decrease-counter d-inline" data-count="100"> - </button>
+                                                    </div>
+                                                </div>
+                                                <div class="single-counter text-center">
+                                                    <h5 class="h5"> الي </h5>
+                                                    <div class="form-group">
+                                                        <button class="for-counter increase-counter d-inline" data-count="100"> + </button>
+                                                        <input type="text" class="counter-val counter-val-2" value="0" disabled>
+                                                        <span class="counter-label"> جنيه </span>
+                                                        <button class="for-counter decrease-counter d-inline" data-count="100"> - </button>
+                                                    </div>
+                                                    <button class="main-btn save-counter monies"> تأكيد </button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <div class="form-group">
+                                        <label> المساحه </label>
+                                        <div class="dropdown detailed-dropwdown-header">
+                                            <button class="btn btn-secondary dropdown-toggle from-to-space" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                المساحه
+                                            </button>
+                                            <div class="dropdown-menu special-dropdown" aria-labelledby="dropdownMenuButton">
+                                                <div class="counters">
+                                                <div class="single-counter text-center">
+                                                    <h5 class="h5"> من </h5>
+                                                    <div class="form-group">
+                                                        <button class="for-counter increase-counter d-inline" data-count="5"> + </button>
+                                                        <input type="text" class="counter-val counter-val-1" value="0" disabled>
+                                                        <span class="counter-label"> متر </span>
+                                                        <button class="for-counter decrease-counter d-inline" data-count="5"> - </button>
+                                                    </div>
+                                                </div>
+                                                <div class="single-counter text-center">
+                                                    <h5 class="h5"> الي </h5>
+                                                    <div class="form-group">
+                                                        <button class="for-counter increase-counter d-inline" data-count="5"> + </button>
+                                                        <input type="text" class="counter-val counter-val-2" value="0" disabled>
+                                                        <span class="counter-label"> متر </span>
+                                                        <button class="for-counter decrease-counter d-inline" data-count="5"> - </button>
+                                                    </div>
+                                                    <button class="main-btn save-counter spaces"> تأكيد </button>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <label class="search-label"> البحث </label>
+                                    <button class="main-btn btn search-btn"> بحث </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END :: DETAILED MAIN HEADER -->
+
+
+        <!-- START :: ALL CONTENT -->
+        <section class="content-with-filter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="building-filter main-shadow">
+                            <h5 class="h5 filter-title"> فلتر العقارات </h5>
+                            <form>
+                                <div class="form-group">
+                                    <label> الغرف والضيوف </label>
+                                    <div class="dropdown detailed-dropwdown-header">
+                                        <button class="btn btn-secondary dropdown-toggle rooms-and-guests" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            الغرف والضيوف
+                                        </button>
+                                        <div class="dropdown-menu special-dropdown" aria-labelledby="dropdownMenuButton">
+                                            <div class="counters">
+                                                <div class="single-counter text-center">
+                                                    <h5 class="h5"> تفاصيل الضيف </h5>
+                                                    <div class="form-group">
+                                                        <button class="for-counter increase-counter d-inline" data-count="1"> + </button>
+                                                        <input type="text" class="counter-val counter-val-1" value="0" disabled>
+                                                        <span class="counter-label"> سرير </span>
+                                                        <button class="for-counter decrease-counter d-inline" data-count="1"> - </button>
+                                                    </div>
+                                                </div>
+                                                <div class="single-counter text-center">
+                                                    <h5 class="h5"> اعداد الضيوف </h5>
+                                                    <div class="form-group">
+                                                        <button class="for-counter increase-counter d-inline" data-count="1"> + </button>
+                                                        <input type="text" class="counter-val counter-val-2" value="0" disabled>
+                                                        <span class="counter-label"> افراد </span>
+                                                        <button class="for-counter decrease-counter d-inline" data-count="1"> - </button>
+                                                    </div>
+                                                    <button class="main-btn save-counter guests"> تأكيد </button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="form-group with-input-radio">
+                                    <label> مفروش </label>
+                                    <span>
+                                        <label class="form-container">مفروش كامل
+                                            <input type="radio" name="is-complete">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </span>
+                                    <span>
+                                        <label for="half-complete"> </label>
+                                        <label class="form-container">نص مفروش 
+                                            <input type="radio" name="is-complete">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="form-group rate-piece">
+                                    <label> التقيم </label>
+                                    <a href="#"> <i class="fas fa-star"></i> </a>
+                                    <a href="#"> <i class="fas fa-star"></i> </a>
+                                    <a href="#"> <i class="fas fa-star"></i> </a>
+                                    <a href="#"> <i class="fas fa-star"></i> </a>
+                                    <a href="#"> <i class="far fa-star"></i> </a>
+                                </div>
+                                <div class="form-group range-style">
+                                    <label> فلتر السعر </label>
+                                    <div id="ranged-value" style="width: 100%;"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label> وسائل الراحة </label>
+                                    <select class="selectpicker" multiple>
+                                        <option>مسبح</option>
+                                        <option>حديقة</option>
+                                        <option>تكيف </option>
+                                        <option>مروحه </option>
+                                        <option>مكنسه </option>
+                                        <option>مكوه </option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <button type="submit" class="main-btn filter-btn"> تطبيق </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="navigation-links-tab main-shadow without-margin-top">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <a href="#" class="navigation-link text-center trans-effect active"> موصى به </a>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <a href="#" class="navigation-link text-center trans-effect"> الأعلى تقيما </a>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <a href="#" class="navigation-link text-center trans-effect"> الأقل سعرا </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-of-filter-page">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="card main-hosting-card main-shadow secondary-card without-padding">
+                                        <img class="card-img-top" src="images/secondary-pages/1.png" alt="Card image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <a href="#"> شقه - سوبر لوكس </a>
+                                            </h5>
+                                            <div class="card-address">
+                                                <span class="address-icon">
+                                                    <img src="images/Icons/address-icon.svg" alt="">
+                                                </span>
+                                                <span class="address-text">
+                                                    المهندسين - القاهره
+                                                </span>
+                                            </div>
+                                            <div class="type-and-price">
+                                                
+                                                <span class="build-price">
+                                                    <span class="price"> 2,670,00 </span>
+                                                    <span class="currency"> جنية </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card main-hosting-card main-shadow secondary-card without-padding">
+                                        <img class="card-img-top" src="images/secondary-pages/1.png" alt="Card image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <a href="#"> شقه - سوبر لوكس </a>
+                                            </h5>
+                                            <div class="card-address">
+                                                <span class="address-icon">
+                                                    <img src="images/Icons/address-icon.svg" alt="">
+                                                </span>
+                                                <span class="address-text">
+                                                    المهندسين - القاهره
+                                                </span>
+                                            </div>
+                                            <div class="type-and-price">
+                                                
+                                                <span class="build-price">
+                                                    <span class="price"> 2,670,00 </span>
+                                                    <span class="currency"> جنية </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card main-hosting-card main-shadow secondary-card without-padding">
+                                        <img class="card-img-top" src="images/secondary-pages/1.png" alt="Card image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <a href="#"> شقه - سوبر لوكس </a>
+                                            </h5>
+                                            <div class="card-address">
+                                                <span class="address-icon">
+                                                    <img src="images/Icons/address-icon.svg" alt="">
+                                                </span>
+                                                <span class="address-text">
+                                                    المهندسين - القاهره
+                                                </span>
+                                            </div>
+                                            <div class="type-and-price">
+                                                
+                                                <span class="build-price">
+                                                    <span class="price"> 2,670,00 </span>
+                                                    <span class="currency"> جنية </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card main-hosting-card main-shadow secondary-card without-padding">
+                                        <img class="card-img-top" src="images/secondary-pages/1.png" alt="Card image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <a href="#"> شقه - سوبر لوكس </a>
+                                            </h5>
+                                            <div class="card-address">
+                                                <span class="address-icon">
+                                                    <img src="images/Icons/address-icon.svg" alt="">
+                                                </span>
+                                                <span class="address-text">
+                                                    المهندسين - القاهره
+                                                </span>
+                                            </div>
+                                            <div class="type-and-price">
+                                                
+                                                <span class="build-price">
+                                                    <span class="price"> 2,670,00 </span>
+                                                    <span class="currency"> جنية </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card main-hosting-card main-shadow secondary-card without-padding">
+                                        <img class="card-img-top" src="images/secondary-pages/1.png" alt="Card image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <a href="#"> شقه - سوبر لوكس </a>
+                                            </h5>
+                                            <div class="card-address">
+                                                <span class="address-icon">
+                                                    <img src="images/Icons/address-icon.svg" alt="">
+                                                </span>
+                                                <span class="address-text">
+                                                    المهندسين - القاهره
+                                                </span>
+                                            </div>
+                                            <div class="type-and-price">
+                                                
+                                                <span class="build-price">
+                                                    <span class="price"> 2,670,00 </span>
+                                                    <span class="currency"> جنية </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card main-hosting-card main-shadow secondary-card without-padding">
+                                        <img class="card-img-top" src="images/secondary-pages/1.png" alt="Card image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <a href="#"> شقه - سوبر لوكس </a>
+                                            </h5>
+                                            <div class="card-address">
+                                                <span class="address-icon">
+                                                    <img src="images/Icons/address-icon.svg" alt="">
+                                                </span>
+                                                <span class="address-text">
+                                                    المهندسين - القاهره
+                                                </span>
+                                            </div>
+                                            <div class="type-and-price">
+                                                
+                                                <span class="build-price">
+                                                    <span class="price"> 2,670,00 </span>
+                                                    <span class="currency"> جنية </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card main-hosting-card main-shadow secondary-card without-padding">
+                                        <img class="card-img-top" src="images/secondary-pages/1.png" alt="Card image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <a href="#"> شقه - سوبر لوكس </a>
+                                            </h5>
+                                            <div class="card-address">
+                                                <span class="address-icon">
+                                                    <img src="images/Icons/address-icon.svg" alt="">
+                                                </span>
+                                                <span class="address-text">
+                                                    المهندسين - القاهره
+                                                </span>
+                                            </div>
+                                            <div class="type-and-price">
+                                                
+                                                <span class="build-price">
+                                                    <span class="price"> 2,670,00 </span>
+                                                    <span class="currency"> جنية </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card main-hosting-card main-shadow secondary-card without-padding">
+                                        <img class="card-img-top" src="images/secondary-pages/1.png" alt="Card image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <a href="#"> شقه - سوبر لوكس </a>
+                                            </h5>
+                                            <div class="card-address">
+                                                <span class="address-icon">
+                                                    <img src="images/Icons/address-icon.svg" alt="">
+                                                </span>
+                                                <span class="address-text">
+                                                    المهندسين - القاهره
+                                                </span>
+                                            </div>
+                                            <div class="type-and-price">
+                                                
+                                                <span class="build-price">
+                                                    <span class="price"> 2,670,00 </span>
+                                                    <span class="currency"> جنية </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card main-hosting-card main-shadow secondary-card without-padding">
+                                        <img class="card-img-top" src="images/secondary-pages/1.png" alt="Card image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <a href="#"> شقه - سوبر لوكس </a>
+                                            </h5>
+                                            <div class="card-address">
+                                                <span class="address-icon">
+                                                    <img src="images/Icons/address-icon.svg" alt="">
+                                                </span>
+                                                <span class="address-text">
+                                                    المهندسين - القاهره
+                                                </span>
+                                            </div>
+                                            <div class="type-and-price">
+                                                
+                                                <span class="build-price">
+                                                    <span class="price"> 2,670,00 </span>
+                                                    <span class="currency"> جنية </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-pagination text-center">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                    <a class="page-link trans-effect other-pages right-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active trans-effect" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link trans-effect" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link trans-effect" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link trans-effect" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link trans-effect" href="#">5</a></li>
+                                    <li class="page-item">
+                                    <a class="page-link trans-effect other-pages left-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END :: ALL CONTENT -->
+
+
+        <!-- START :: FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="hosting-brief-and-social-media">
+                            <div class="footer-logo">
+                                <img src="images/Global/main-logo.svg" alt="Hosting logo" title="Hosting logo">
+                            </div>
+                            <div class="hosting-brief">
+                                <p>
+                                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ 
+                                </p>
+                            </div>
+                            <div class="hosting-social-media">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> 
+                                            <img src="images/Icons/facebook.svg" alt="Facebook" title="Facebook">    
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <img src="images/Icons/twitter.svg" alt="Twitter" title="Twitter">    
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <img src="images/Icons/insta.svg" alt="Instagram" title="Instagram">    
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <img src="images/Icons/linkedin.svg" alt="Linkedin" title="Linkedin">    
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="quick-links">
+                            <h4 class="h4 footer-heading"> روابط سريعه </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#"> الرئيسيه </a>
+                                </li>
+                                <li>
+                                    <a href="#"> من نحن </a>
+                                </li>
+                                <li>
+                                    <a href="#">عقارات مميزة </a>
+                                </li>
+                                <li>
+                                    <a href="#"> الشروط والاحكام </a>
+                                </li>
+                                <li>
+                                    <a href="#"> عقاراتي </a>
+                                </li>
+                                <li>
+                                    <a href="#"> تواصل معنا </a>
+                                </li>
+                                <li>
+                                    <a href="#"> دخول/تسجيل </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="contact-us">
+                            <h4 class="h4 footer-heading"> تواصل معنا </h4>
+                            <div class="phone">
+                                <span> <img src="images/Icons/phone.svg" alt=""> </span>
+                                <a href="tel:01030891060"> ٠١٠٣٠٨٩١٠٦٠ </a>
+                            </div>
+                            <div class="email">
+                                <span> <img src="images/Icons/email.svg" alt=""> </span>
+                                <a href="mailto:engwalideisa@gmail.com"> engwalideisa@gmail.com </a>
+                            </div>
+                            <div class="address">
+                                <span> <img src="images/Icons/address.svg" alt=""> </span>
+                                <a href="#">
+                                     ١٣ شارع محمود رسلان
+                                    متفرع من الامام الغزالي - المنيره الغربيه 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright text-center">
+                    <p>
+                        جميع الحقوق محفوظة هوستنج ٢٠٢٠
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- END :: FOOTER -->
+        
+
+
+
+
+        <!-- JavaScript files -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/daterangepicker.min.js"></script>
+        <script src="js/freshslider.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+.main-btn {
+    background-color: $main-color;
+    color: $white-color;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 22px;
+    @extend .trans-effect;
+    font: {
+        size: 18px;
+        weight: normal
+    }
+    &:hover {
+        box-shadow: 2px 5px 15px -10px $gray-color-2;
+        color: $white-color;
+    }
+}

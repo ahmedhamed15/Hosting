@@ -1,0 +1,32 @@
+.register-account {
+    padding-top: 120px;
+    .register-wrapper {
+        padding: 75px 95px;
+        border-radius: 15px;
+        background-color: rgba($main-color, 0.20);
+        h3 {
+            color: $main-color;
+            font: {
+                size: 35px;
+                weight: normal;
+            }
+            line-height: 1.5;
+        }
+    }
+    .row {
+        > div {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .register-link {
+        width: 100%;
+        a {
+            width: 245px;
+            font: {
+                size: 20px;
+                weight: normal
+            };
+        }
+    }
+}

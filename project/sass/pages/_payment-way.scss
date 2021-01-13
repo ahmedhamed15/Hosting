@@ -1,0 +1,109 @@
+.payment-way {
+    margin-top: 140px;
+    .payment-form {
+        border-radius: 15px;
+        padding: 47px 96px;
+        .budget {
+            width: 322px;
+            padding: 23px 23px 45px;
+            border-radius: 15px;
+            margin: auto;
+            color: $white-color;
+            background-image: linear-gradient(#72BF44, #25A84C);
+            margin-bottom: 53px;
+            h5 {
+                font: {
+                    size: 22px;
+                    weight: normal
+                }
+                margin-bottom: 22px;
+            }
+            .budget-mony {
+                .price {
+                    font: {
+                        size: 35px;
+                        weight: normal
+                    }
+                }
+                .currency {
+                    font: {
+                        size: 20px;
+                        weight: normal
+                    }
+                }
+            }
+        }
+        form {
+            .form-group {
+                margin-bottom: 25px;
+            }
+            input {
+                width: 242px;
+                &.expire-date {
+                    width: 190px;
+                }
+                &.ccv {
+                    width: 116px;
+                }
+                &.main-btn {
+                    cursor: pointer;
+                    outline: 0;
+                    border: none;
+                    background-color: $main-light-color;
+                    margin-top: 15px;
+                }
+            }
+            .save-card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 50px;
+                margin-top: 15px;
+                span {
+                    font: {
+                        size: 20px;
+                        weight: normal
+                    }
+                }
+            }
+        }
+    }
+}
+.charging-mony-modal {
+    .modal-dialog {
+        max-width: 703px;
+        .modal-content {
+            border-radius: 27px;
+            padding: 25px;
+            width: 703px;
+        }
+    }
+    .modal-body {
+        width: 235px;
+        margin: auto;
+        h5 {
+            font: {
+                size: 23px;
+                weight: normal
+            }
+            margin-bottom: 23.5px;
+        }
+        img {
+            width: 177px;
+            height: 195px;
+            object-fit: cover;
+            margin-bottom: 19.4px;
+        }
+        p {
+            font: {
+                size: 20px;
+                weight: normal
+            }
+            margin-bottom: 37px;
+        }
+        a.main-btn {
+            background-color: $main-light-color;
+            width: 100%;
+        }
+    }
+}

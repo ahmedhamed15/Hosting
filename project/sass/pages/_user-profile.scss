@@ -1,0 +1,129 @@
+.user-profile {
+    margin-top: 140px;
+    .left-side {
+        border-radius: 15px;
+        padding: 60px;
+    }
+    form.user-form {
+        width: 330px;
+        margin: auto;
+        .user-profile-form-img {
+            margin-bottom: 32px;
+            img {
+                width: 238px;
+                height: 223px;
+                object-fit: cover;
+            }
+        }
+        button.main-btn {
+            width: 255px;
+            background-color: $main-light-color;
+            border: none;
+            box-shadow: none;
+            cursor: pointer;
+            height: 44px;
+            &:focus,
+            &:active {
+                outline: none;
+                border: none;
+            }
+        }
+    }
+    .user-information {
+        .profile-user-img {
+            margin: auto;
+            width: 207px;
+            height: 136px;
+            background: url('../images/Global/user-background.svg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            margin-bottom: 90px;
+            &:after,
+            &:before {
+                content: "";
+                background: url('../images/Icons/squar.svg') no-repeat center center;
+                background-size: cover;
+                width: 13px;
+                height: 13px;
+                position: absolute;
+                transform: rotate(-351deg);
+            }
+            &:after {
+                top: -30px;
+                right: 5px;
+            }
+            &:before {
+                bottom: -10px;
+                right: 15px;
+            }
+            .circle-icon {
+                background: url('../images/Icons/circle.svg') no-repeat center center;
+                background-size: cover;
+                width: 14.5px;
+                height: 14.5px;
+                position: absolute; 
+                bottom: 10px;
+                left: -15px;
+            }
+            img {
+                background-color: $white-color;
+                width: 99px;
+                height: 99px;
+                border-radius: 50%;
+                margin-top: 57px;
+            }
+            .circle-icon {
+
+            }
+        }
+        .main-user-info {
+            > h4 {
+                font: {
+                    size: 20px;
+                    weight: normal
+                }
+                margin-bottom: 25px;
+            }
+            ul.all-info {
+                padding: 0;
+                &:not(:last-of-type) {
+                    margin-bottom: 26px;
+                }
+                li {
+                    display: flex;
+                    position: relative;
+                    &:not(:last-child) {
+                        margin-bottom: 17px;
+                    }
+                    img {   
+                        width: 24px;
+                        height: 24px;
+                        margin-left: 7px;
+                    }   
+                    a {
+                        font: {
+                            size: 15px;
+                            weight: normal
+                        }
+                        color: $black-color;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            top: 0;
+                            z-index: 5;
+                        }
+                    }
+                    i {
+                        margin-right: auto;
+                        font: {
+                            size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

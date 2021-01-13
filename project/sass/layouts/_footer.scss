@@ -1,0 +1,98 @@
+.footer {
+    padding-top: 112px;
+    .footer-heading {
+        color: $black-color;
+        font: {
+            size: 24px;
+            weight: normal;
+        }
+        margin-bottom: 32px;
+    }
+    ul {
+        padding: 0;
+    }
+    .hosting-brief-and-social-media {
+        .footer-logo {
+            margin-bottom: 16.5px;
+            img {
+                width: 62px;
+                height: auto;
+            }
+        }
+        .hosting-brief {
+            p {
+                font: {
+                    size: 16px;
+                    weight: normal
+                }
+                width: 66%;
+            }
+            margin-bottom: 25px;
+        }
+        .hosting-social-media {
+            ul {
+                display: flex;
+                flex-direction: row; 
+                li {
+                    &:not(:last-child) {
+                        margin-left: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .quick-links {
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            li {
+                flex: 0 0 50%;
+                max-width: 50%;
+                margin-bottom: 17px;
+                a {
+                    color: $black-color;
+                    text-decoration: underline !important;
+                    text-underline-position: under;
+                    font: {
+                        size: 16px; 
+                        weight: normal;
+                    }
+                }
+            }
+        }
+    } 
+    .contact-us {
+        > div {
+            display: flex;
+            flex-direction: row;
+            &:not(:last-child) {
+                margin-bottom: 18px;
+            }
+            span {
+                display: inline-block;
+                margin-left: 14px;
+            }
+            a {
+                font: {
+                    size: 18px;
+                    weight: normal
+                }
+                color: $black-color;
+            }
+        }
+    }
+    .copyright {
+        border-top: 1px solid $gray-color-4;
+        padding: 30px 0;
+        margin-top: 30px;
+        p {
+            color: $black-color;
+            margin: 0;
+            font: {
+                size: 18px;
+                weight: normal
+            }
+        }
+    }
+}

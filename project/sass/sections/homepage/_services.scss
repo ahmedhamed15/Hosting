@@ -1,0 +1,23 @@
+.services {
+    padding: 120px 0 95px;
+    .section-service {
+        .img-service {
+            margin-bottom: 45px;
+            height: 215px;
+            overflow: hidden;
+        }
+        .service-title {
+            font: {
+                size: 24px;
+                weight: 400;
+            }
+            margin-bottom: 23px;
+        }
+        .service-description {
+            font: {
+                size: 16px;
+                weight: 400;
+            }
+        }
+    }
+}
