@@ -1,9 +1,10 @@
 .shared-detailed-page-header {
     background-color: $gray-color-4;
     padding-top: 140px;
-    padding-bottom: 55px;
+    padding-bottom: 100px;
     margin-bottom: 56px;
     .header-content {
+        padding-top: 30px;
         .main-title {
             margin-bottom: 10px;
             .header-title {
@@ -11,6 +12,12 @@
                     size: 32px;
                     weight: normal;
                     margin-left: 20px;
+                }
+            }
+            .hotel-rate {
+                font: {
+                    size: 18px;
+                    weight: 300
                 }
             }
             .header-heart {
@@ -126,6 +133,66 @@
                 }
             }
         }
+        .hotel-services {
+            display: flex;
+            flex-direction: row;
+            padding-left: 110px;
+            flex-wrap: wrap;
+            margin-top: 37.6px;
+            .hotel-service {
+                background-color: $white-color;
+                border-radius: 7px;
+                width: 92px;
+                height: 87px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 13px;
+                margin-bottom: 16px;
+                p {
+                    margin: 0;
+                    font: {
+                        size: 14px;
+                        weight: 300
+                    }
+                }
+            }
+        }
+    }
+    .hotel-slider {
+        .main-img {
+            width: 522px;
+            height: 290px;
+            margin-bottom: 26px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                object-fit: cover; 
+            }
+        }
+        .slider-nav {
+            display: flex;
+            flex-direction: row;
+            .thumbnail-img {
+                @extend .trans-effect;
+                opacity: 0.5;
+                cursor: pointer;
+                &.active {
+                    opacity: 1;
+                }
+                &:not(:last-child) {
+                    margin-left: 35px;
+                }
+                img {
+                    width: 76px;
+                    height: 76px;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+        }
     }
 }
 
@@ -150,7 +217,7 @@
 
 
 
-
+// Flip Slider
 @mixin breakpoint($point) {
     @if $point==xxs {
         @media (max-width: 480px) {
@@ -190,7 +257,7 @@
 
 
 .carousel-wrap {
-    width: 635px;
+    width: 535px;
     height: 323px;
     margin: 0 auto !important;
     position: relative;
@@ -207,11 +274,16 @@
     }
 }
 
-.carousel {}
+.carousel {
+    height: 100%;
+    direction: ltr;
+    display: flex;
+    margin-top: -25px;
+}
 
 .carousel>li {
-    width: 380px;
-    height: 254px;
+    width: 390px;
+    height: 336px;
     display: inline-block;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -234,6 +306,26 @@
         border-radius: 20px;
         cursor: pointer;
     }
+    .review-card,
+    .slide-img-f-arrangement {
+        height: 100%;
+    }
+    .slide-img-f-arrangement {
+        position: relative;
+        > a {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            background-color: $white-color;
+            border-radius: 15px 0 15px 0;
+            font: {
+                size: 16px;
+                weight: normal
+            }
+            color: $black-color;
+            padding: 7px 25px;
+        }
+    }
 }
 
 .items {
@@ -253,7 +345,7 @@
 
 .left-pos {
     opacity: .5;
-    margin-left: -10em !important;
+    margin-left: -6em !important;
     z-index: 1000;
     -webkit-transform: scale(.75);
     -moz-transform: scale(.75);
@@ -278,7 +370,7 @@
 
 .right-pos {
     opacity: .5;
-    margin-left: 14em !important;
+    margin-left: 10em !important;
     z-index: 1000;
     -webkit-transform: scale(.75);
     -moz-transform: scale(.75);
@@ -296,6 +388,7 @@
 
 .slider {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -312,16 +405,11 @@
     #next {
         position: absolute;
         z-index: 9;
-        bottom: -200px;
+        bottom: -85px;
         border: none;
         width: 55px;
         height: 55px;
         border-radius: 10px;
-        border: 1px solid #453D66;
-        @extend .trans-effect;
-        &:hover {
-            background-color: #453D66;
-        }
         @media (max-width: 768px) {
             width: 40px;
             height: 40px;
@@ -332,19 +420,17 @@
             content: "";
             display: block;
             background-size: contain !important;
-            margin: auto;
-            margin-top: 16px;
-            width: 10px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
             @media (max-width: 768px) {
                 margin-top: 10px;
             }
         }
     }
     #prev {
-        left: 75px;
+        left: 195px;
         &:before {
-            background: url('../images/chevrone-left.svg') no-repeat center center;
+            background: url('../images/Global/left-arrow.svg') no-repeat center center;
         }
         @include breakpoint(md) {
             left: -180px;
@@ -357,9 +443,9 @@
         }
     }
     #next {
-        left: 307px;
+        left: 260px;
         &:before {
-            background: url('../images/chevrone-right.svg') no-repeat center center;
+            background: url('../images/Global/right-arrow.svg') no-repeat center center;
         }
         @include breakpoint(md) {
             right: -180px;

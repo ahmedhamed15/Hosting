@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="ar">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title> Hosting - Hotel Login & Payment </title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Google font -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&display=swap&subset=arabic,latin-ext" rel="stylesheet"> -->
+
+        <!-- Animate plugin -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Fontawesome 5 -->
+        <link rel="stylesheet" href="css/all.min.css">
+
+        <!-- Slick slider -->
+        <link rel="stylesheet" href="css/slick.css">
+
+        <!-- Style file -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/Global/main-logo.svg">
+
+    </head>
+    <body>
+
+
+         <!-- START :: NAVBAR -->
+         <nav class="navbar main-navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/Global/main-logo.svg" alt="Hosting" title="Hosting">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Main menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">عقارات مميزة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تواصل معنا</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search form -->
+                    <form class="form-inline nav-search-form my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 search-input" type="search" placeholder="بحث..." aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 search-submit">
+                            <img src="images/Global/search.svg" alt="">
+                        </button>
+                    </form>
+
+                    <!-- Notifications Link -->
+                    <a href="#" class="notifications-link">
+                        <img src="images/Global/bell.svg" alt="">
+                    </a>
+
+                    <!-- Signin/Signup -->
+                    <a href="#" class="login-and-register-link main-btn"> دخول/تسجيل </a>
+
+                </div>
+            </div>
+        </nav>
+        <!-- END :: NAVBAR -->
+
+
+        <!-- START :: TOP SECTION -->
+        <section class="top-section-login-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="login-now main-shadow">
+                            <p> قم بتسجيل الدخول لتسريع عملية الحجز </p>
+                            <a href="#" class="main-btn"> دخول/تسجيل </a>
+                        </div>
+                        <div class="right-hotel-card main-shadow">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <div class="card-img">
+                                        <img src="images/Secondary-pages/1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <div class="all-detailes">
+                                        <h3>
+                                            <span> فندق فور سيزونز </span>
+                                            <sup class="rate">
+                                                <i class="far fa-star"></i>
+                                                4.7
+                                            </sup>
+                                        </h3>
+                                        <div class="hotel-address">
+                                            سان ستيفانو - الاسكندريه
+                                        </div>
+                                        <div class="bed-type">
+                                            نوع السرير: سرير واحد كوين
+                                        </div>
+                                        <div class="rooms-and-nights">
+                                            1 غرفة 6 ليالي
+                                        </div>
+                                        <div class="card-date">
+                                            الثلاثاء 28 مارس - الخميس 28 ابريل
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="booking-information main-shadow">
+                            <h4 class="h4"> معلومات الحجز </h4>
+                            <div class="booking-detailes">
+                                <h3 class="h3"> شقه - سوبر لوكس </h3>
+                                <div class="numbers-of-booking"> 1 غرفة 6 ليالي </div>
+                                <div class="booking-date">
+                                    <span> الثلاثاء 28 مارس </span>
+                                    -
+                                    <span> الخميس 28 ابريل </span>
+                                </div>
+                                <div class="total-price">
+                                    <span class="total-label"> الاجمالي </span>
+                                    <span class="price-and-currency">
+                                        <span class="price offer"> 2,670,00 </span>
+                                        <span class="currency"> جنية </span>
+                                    </span>
+                                </div>
+                                <form action="" class="sale-code">
+                                    <input type="text"  placeholder="هل لديك كود خصم">
+                                    <button class="main-btn" type="submit"> تطبيق </button>
+                                </form>
+                                <div class="total-after-sale total-price">
+                                    <span class="total-label"> اجمالي المطلوب بعد الخصم </span>
+                                    <span class="price-and-currency">
+                                        <span class="price"> 2,670,00 </span>
+                                        <span class="currency"> جنية </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END :: TOP SECTION -->
+
+
+        <!-- START :: GUEST INFO -->
+        <section class="guest-info-section">
+            <div class="container">
+                <form action="" class="guest-info main-shadow">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="gender">
+                                <h4 class="h4"> معلومات الضيف </h4>
+                                <div class="form-group">
+                                    <input type="radio" id="male" class="d-none" name="gender" class="">
+                                    <label for="male" class="main-shadow"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" id="female" class="d-none" name="gender" class="">
+                                    <label for="female" class="main-shadow"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="login-or-register">
+                                <h5 class="h5"> يمكنك تسجيل الدخول او انشاء حساب جديد </h5>
+                                <div class="form-group">
+                                    <input type="text" class="form-control main-input main-shadow" placeholder="الاسم بالكامل">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control main-input main-shadow" placeholder="البريد الالكتروني">
+                                </div>
+                                <div class="form-group phone-number">
+                                    <input type="text" class="main-shadow form-control main-input" placeholder="01030891060">
+                                    <select class="country-code form-control">
+                                        <option value="+02"> +02 </option>
+                                        <option value="+966"> +966 </option>
+                                        <option value="+05"> +05 </option>
+                                    </select>
+                                    <img src="images/Icons/phone-regular.svg" class="phone-img-" alt="">
+                                </div>
+                                <div class="form-group">
+                                    <button type="button"  data-toggle="modal" data-target="#exampleModal" class="main-btn main-shadow"> الدفع </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- END :: GUEST INFO -->
+
+
+        <!-- START :: BOTTOM SECTION -->
+        <section class="buttom-section-payment-info">
+            <div class="container">
+                <div class="payment-way">
+                    <div class="payment-form main-shadow">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li>
+                                <h4 class="h4"> حدد طريقة الدفع؟ </h4>
+                            </li>
+                            <li class="nav-item visa-tab">
+                              <a class="nav-link active " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                  <span> الدفع بالبطاقه </span>
+                                  <img src="images/Icons/card-payment.svg" alt="">
+                              </a>
+                            </li>
+                            <li class="nav-item cach">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                <span> كاش يدوي </span>
+                                <img src="images/Icons/cach.svg" alt="">
+                              </a>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                                <div class="visa-card-simulator main-shadow text-left">
+                                    <div class="logos"> 
+                                        <img src="images/Icons/card-code.svg" alt="">
+                                        <img src="images/Icons/visa-pay-logo.svg" alt="">
+                                    </div>
+                                    <div class="visa-num"> 4234 - 4567 - 3214 - 6547 </div>
+                                    <div class="name-and-ex-date">
+                                        <div class="ex-date">
+                                            <span class="ex-date-title"> EX - DATE </span>
+                                            <span class="ex-date-text"> 11/12 </span>
+                                        </div>
+                                        <div class="name">
+                                            <span class="card-name"> CARD NAME </span>
+                                            <span class="name-text"> WALID EISA ISMAIL </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control main-shadow main-input" placeholder="رقم البطاقة">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control main-shadow main-input" placeholder="اسم صاحب البطاقة">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control main-shadow main-input expire-date" placeholder="04/07">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control main-shadow main-input ccv" placeholder="CCV">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group payment-info">
+                                                <p>
+                                                    باستكمال هذا الحجز فأنك توافق بأنك قمت بمراجعة و قبول الشروط و الضوابط أعلاه
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <button type="button" class="main-btn main-shadow" value="شحن" data-toggle="modal" data-target="#exampleModal">
+                                                    <span> ادفع </span>
+                                                    &nbsp;
+                                                    <span> 
+                                                        27650.34
+                                                        <sub> جنية </sub>    
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END :: BOTTOM SECTION -->
+
+
+        <!-- START :: PAYMENT FORM -->
+        
+        <!-- END :: PAYMENT FORM -->
+
+
+        <!-- Modal -->
+        <div class="modal fade charging-mony-modal main-model-style" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h5 class="h5"> تأكيد عملية الدفع </h5>
+                    <img src="images/Global/charging-successfully.svg" alt="">
+                    <p>
+                        تمت عملية الشحن بنجاح
+                        شكرا لثقتك
+                    </p>
+                    <a href="#" class="main-btn main-shadow"> عرض معلومات الحجز </a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- START :: FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="hosting-brief-and-social-media">
+                            <div class="footer-logo">
+                                <img src="images/Global/main-logo.svg" alt="Hosting logo" title="Hosting logo">
+                            </div>
+                            <div class="hosting-brief">
+                                <p>
+                                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ 
+                                </p>
+                            </div>
+                            <div class="hosting-social-media">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> 
+                                            <img src="images/Icons/facebook.svg" alt="Facebook" title="Facebook">    
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <img src="images/Icons/twitter.svg" alt="Twitter" title="Twitter">    
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <img src="images/Icons/insta.svg" alt="Instagram" title="Instagram">    
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <img src="images/Icons/linkedin.svg" alt="Linkedin" title="Linkedin">    
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="quick-links">
+                            <h4 class="h4 footer-heading"> روابط سريعه </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#"> الرئيسيه </a>
+                                </li>
+                                <li>
+                                    <a href="#"> من نحن </a>
+                                </li>
+                                <li>
+                                    <a href="#">عقارات مميزة </a>
+                                </li>
+                                <li>
+                                    <a href="#"> الشروط والاحكام </a>
+                                </li>
+                                <li>
+                                    <a href="#"> عقاراتي </a>
+                                </li>
+                                <li>
+                                    <a href="#"> تواصل معنا </a>
+                                </li>
+                                <li>
+                                    <a href="#"> دخول/تسجيل </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="contact-us">
+                            <h4 class="h4 footer-heading"> تواصل معنا </h4>
+                            <div class="phone">
+                                <span> <img src="images/Icons/phone.svg" alt=""> </span>
+                                <a href="tel:01030891060"> ٠١٠٣٠٨٩١٠٦٠ </a>
+                            </div>
+                            <div class="email">
+                                <span> <img src="images/Icons/email.svg" alt=""> </span>
+                                <a href="mailto:engwalideisa@gmail.com"> engwalideisa@gmail.com </a>
+                            </div>
+                            <div class="address">
+                                <span> <img src="images/Icons/address.svg" alt=""> </span>
+                                <a href="#">
+                                     ١٣ شارع محمود رسلان
+                                    متفرع من الامام الغزالي - المنيره الغربيه 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright text-center">
+                    <p>
+                        جميع الحقوق محفوظة هوستنج ٢٠٢٠
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- END :: FOOTER -->
+        
+
+
+
+
+        <!-- JavaScript files -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

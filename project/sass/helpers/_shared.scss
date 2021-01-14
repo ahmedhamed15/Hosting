@@ -185,7 +185,8 @@ body {
 }
 
 .notifications,
-.favorite-list {
+.favorite-list,
+.top-section-login-info {
     margin-top: 140px;
 }
 .all-favorite-items {
@@ -211,40 +212,6 @@ body {
             weight: normal
         }
         margin-bottom: 66px;
-    }
-    .phone-number {
-        position: relative;
-        &:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 92px;
-            width: 1px;
-            height: 26px;
-            background-color: #707070;
-            transform: translateY(-50%);
-        }
-        > input {
-            padding-left: 107px;
-            direction: ltr;
-        }
-        .country-code {
-            position: absolute;
-            top: 4px;
-            left: 6px;
-            width: 85px;
-            border: none;
-            border-radius: 25px;
-            &:focus {
-                box-shadow: none;
-            }
-        }
-        .phone-img- {
-            position: absolute;
-            top: 50%;
-            right: 15px;
-            transform: translateY(-50%);
-        }
     }
     textarea.main-textarea {
         margin-bottom: 47px;
@@ -277,6 +244,42 @@ body {
                 }
             }
         }
+    }
+}
+
+// Input with Phone number
+.phone-number {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 92px;
+        width: 1px;
+        height: 26px;
+        background-color: #707070;
+        transform: translateY(-50%);
+    }
+    input {
+        padding-left: 120px !important;
+        direction: ltr;
+    }
+    .country-code {
+        position: absolute;
+        top: 4px;
+        left: 6px;
+        width: 85px;
+        border: none;
+        border-radius: 25px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .phone-img- {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
     }
 }
 
@@ -325,7 +328,6 @@ label[for="switch"]:active:after {
 }
 
 // Main input
-
 input.main-input,
 textarea.main-textarea {
     margin-bottom: 20px;
@@ -339,5 +341,153 @@ textarea.main-textarea {
     min-height: 150px;
 }
 
+
+
+// Google Map
+#map {
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.custom-map-control-button {
+    appearance: button;
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 10px;
+    padding: 0 0.5em;
+    height: 40px;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+}
+.custom-map-control-button:hover {
+    background: #ebebeb;
+}
+
+
+/* The container */
+.form-container {
+    display: block;
+    position: relative;
+    padding-right: 22px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline;
+}
+
+/* Hide the browser's default checkbox */
+.form-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #E8ECEF;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.form-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-container input:checked ~ .checkmark {
+    background-color: $main-color;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.form-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-container .checkmark:after {
+    left: 3.5px;
+    top: 3.5px;
+    width: 10px;
+    height: 10px;
+    background-color: #E8ECEF;
+    border-radius: 50%;
+}
+
+// Main model style
+
+.main-model-style {
+    .modal-dialog {
+        max-width: 703px;
+        .modal-content {
+            border-radius: 27px;
+            padding: 25px;
+            width: 703px;
+        }
+    }
+    .modal-body {
+        width: 235px;
+        margin: auto;
+        h5 {
+            font: {
+                size: 23px;
+                weight: normal
+            }
+            margin-bottom: 23.5px;
+        }
+        img {
+            width: 177px;
+            height: 195px;
+            object-fit: cover;
+            margin-bottom: 19.4px;
+        }
+        p {
+            font: {
+                size: 20px;
+                weight: normal
+            }
+            margin-bottom: 37px;
+        }
+        a.main-btn {
+            background-color: $main-light-color;
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+}
+.error-modal {
+    .main-btn {
+        outline: 0;
+        margin: auto;
+        background-color: $main-light-color;
+        width: 255px;
+        border: none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 73px;
+        cursor: pointer;
+    }
+}
 
 /* =====[End: Shared styles]===== */
