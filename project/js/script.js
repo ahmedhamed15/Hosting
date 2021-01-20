@@ -52,32 +52,41 @@ $(function() {
 
 
     /* START :: Bootstrap Select Plugin */
-    $('select:not(.selectpicker)').selectpicker({
-        liveSearch: true,
-        maxOptions: 1
-    });
+    if ($('select').length) {
+        try {
+            $('select:not(.selectpicker)').selectpicker({
+                liveSearch: true,
+                maxOptions: 1
+            });
+        } catch (error) { console.log(error); }
+    }
     /* END :: Bootstrap Select Plugin */
 
 
     /* START :: Daterangepicker Plugin */
-    $('input[name="daterange"]').daterangepicker({
-        opens: 'right'
-    });
+    if ($('select').length) {
+        try {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'right'
+            });
+        } catch (error) {console.log(error);}
+    }
+    
     /* END :: Daterangepicker Plugin */
 
 
     /* START :: Counter */
     $('.for-counter').on('click', function(e) {
-    var counterField    = $(this).parent().find('input'),
-        dataCount       = parseInt($(this).data('count')),
-        counterVal      = parseInt(counterField.val());
-    if($(this).hasClass('increase-counter')) {
-        counterVal += dataCount;
-    } else {
-        (counterVal <= 0) ? counterVal = 0 : counterVal -= dataCount;
-    }
-    counterField.val(counterVal)
-    return false;
+        var counterField    = $(this).parent().find('input'),
+            dataCount       = parseInt($(this).data('count')),
+            counterVal      = parseInt(counterField.val());
+        if($(this).hasClass('increase-counter')) {
+            counterVal += dataCount;
+        } else {
+            (counterVal <= 0) ? counterVal = 0 : counterVal -= dataCount;
+        }
+        counterField.val(counterVal)
+        return false;
     });
     /* END :: Counter */
 
@@ -176,7 +185,31 @@ $(function() {
         $(this).parent().css('opacity', '1').siblings().css('opacity', '0.5');
         $('.hotel-slider .main-img img').attr('src', $(this).attr('src'));
     });
-    /* END :: Hotel Main Slider */              
+    /* END :: Hotel Main Slider */     
+    
+    
+    /* START :: Show and hide password */
+    $('.password-field > i').on('click', function() {
+        console.log("AHMED")
+        if ($(this).hasClass('show-pass')) {
+            $(this).prev('input').attr('type', 'text');
+        } else {
+            $(this).prev('input').attr('type', 'password');
+        }
+        $(this).toggleClass('show-pass hide-pass fa-eye fa-eye-slash');
+    });
+    /* END :: Show and hide password */
+
+
+    /* START :: Add background color for the verify mobile and password */
+    $('.small-input').on('keyup', function() {
+        if ($(this).val().length > 0) {
+            $(this).css('background-color', ' #28A745');
+        } else {
+            $(this).css('background-color', ' #fff');
+        }
+    });
+    /* END :: Add background color for the verify mobile and password */
 
 
 });

@@ -329,7 +329,8 @@ label[for="switch"]:active:after {
 
 // Main input
 input.main-input,
-textarea.main-textarea {
+textarea.main-textarea,
+select.main-select {
     margin-bottom: 20px;
     border-radius: 50px;
     padding: 10px 30px;
@@ -339,6 +340,18 @@ textarea.main-textarea {
 textarea.main-textarea {
     border-radius: 25px !important;
     min-height: 150px;
+}
+.password-field {
+    position: relative;
+    > i {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        cursor: pointer;
+    }
+    > input {
+        padding-left: 50px;
+    }
 }
 
 
@@ -456,7 +469,7 @@ textarea.main-textarea {
             }
             margin-bottom: 23.5px;
         }
-        img {
+        img:not(.phone-img-) {
             width: 177px;
             height: 195px;
             object-fit: cover;
@@ -469,10 +482,24 @@ textarea.main-textarea {
             }
             margin-bottom: 37px;
         }
-        a.main-btn {
+        a.main-btn,
+        button.main-btn {
             background-color: $main-light-color;
             width: 100%;
             font-size: 15px;
+            border: none;
+            cursor: pointer;
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+    &.verify-mobile {
+        .form-group:first-child {
+            margin: 40px 0;
+        }
+        .main-btn {
+            width: 200px !important;
         }
     }
 }
