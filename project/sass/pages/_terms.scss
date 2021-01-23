@@ -15,6 +15,9 @@
             weight: normal
         }
         margin-bottom: 24px;
+        @media ($mobile) {
+            font-size: 18px;
+        }
     }
     .who-are-us-img {
         overflow: hidden;
@@ -23,6 +26,10 @@
             width: 510px;
             height: 323px;
             object-fit: cover;
+            @media ($mobile) {
+                width: 78%;
+                height: auto;
+            }
         }
     }
     .terms-box {
@@ -34,6 +41,9 @@
             }
             color: $gray-color-8;
             margin-bottom: 15px;
+            @media ($mobile) {
+                font-size: 23px;
+            }
         }
         p {
             margin: 0;
@@ -43,6 +53,9 @@
                 weight: 300
             }
             color: #707070;
+            @media ($mobile) {
+                padding-right: 0;
+            }
         }
     }
 }

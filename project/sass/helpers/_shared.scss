@@ -40,6 +40,9 @@ body {
 // Main section info for homepage
 .main-section-info {
     margin-bottom: 91px;
+    @media ($mobile) {
+        margin-bottom: 40px;
+    }
     > h2 {
         font: {
             size: 32px;
@@ -47,6 +50,9 @@ body {
         }
         margin-bottom: 11px;
         position: relative;
+        @media ($mobile) {
+            font-size: 20px;
+        }
         &::after {
             content: "";
             position: absolute; 
@@ -65,6 +71,10 @@ body {
         font: {
             size: 16px;
             weight: 400;
+        }
+        @media ($mobile) {
+            font-size: 14px;
+            width: 94%;
         }
     }
 }
@@ -206,12 +216,18 @@ body {
     width: 430px;
     margin: auto;
     margin-top: 140px;
+    @media ($mobile) {
+        width: auto
+    }
     h4 {
         font: {
             size: 27px;
             weight: normal
         }
         margin-bottom: 66px;
+        @media ($mobile) {
+            font-size: 21px;
+        }
     }
     textarea.main-textarea {
         margin-bottom: 47px;
@@ -232,6 +248,10 @@ body {
                 weight: normal
             }
             margin-bottom: 37px;
+            @media ($mobile) {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
         }
         ul {
             padding: 0;
@@ -457,17 +477,26 @@ textarea.main-textarea {
             border-radius: 27px;
             padding: 25px;
             width: 703px;
+            @media ($mobile) {
+                width: auto;
+            }
         }
     }
     .modal-body {
         width: 235px;
         margin: auto;
+        @media ($mobile) {
+            padding: 0;
+        }
         h5 {
             font: {
                 size: 23px;
                 weight: normal
             }
             margin-bottom: 23.5px;
+            @media ($mobile) {
+                font-size: 20px;
+            }
         }
         img:not(.phone-img-) {
             width: 177px;

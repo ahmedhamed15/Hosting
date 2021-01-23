@@ -1,5 +1,8 @@
 .financial-transactions {
     margin-top: 140px; 
+    @media ($mobile) {
+        margin-top: 90px;
+    }
     .all-mony-and-charging {
         margin-bottom: 35px;
         .all-mony {
@@ -55,12 +58,21 @@
             border-radius: 15px;
             padding: 22px 44px;
             height: 100%;
+            @media ($mobile) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 19px 44px;
+            }
             > h5 {
                 font: {
                     size: 20px;
                     weight: normal;
                 }
                 margin-bottom: 15px;
+                @media ($mobile) {
+                    margin: 0;
+                }
             }
             .mony-charging-link {
                 color: $black-color;
@@ -83,6 +95,9 @@
         font: {
             size: 24px;
             weight: normal
+        }
+        @media ($mobile) {
+            font-size: 20px;
         }
     }
 }

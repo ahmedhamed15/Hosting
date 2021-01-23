@@ -2,20 +2,63 @@
     height: 70px;
     background-color: #FFF !important;
     box-shadow: 0 2px 15px rgba(21,31,52,.2);
+    @media ($mobile) {
+        height: auto;
+    }
     .navbar-brand {
         margin-right: 0;
         margin-left: 90px;
         > img {
             width: 52px;
             height: auto; 
+            @media ($mobile) {
+                width: 45px;
+            }
         }
     }
     .navbar-collapse {
+        @media ($mobile) {
+            position: static;
+            overflow: auto;
+            > .dropdown {
+                position: absolute;
+                top: 10px;
+                left: 110px;
+                .user-name {
+                    display: none;
+                }
+                .user-img {
+                    width: 30px;
+                    height: 30px;
+                    min-width: 30px;
+                    min-height: 30px;
+                }
+                .dropdown-toggle {
+                    &:after {
+                        display: none;
+                    }
+                }
+                .dropdown-item {
+                    font-size: 13px;
+                }
+            }
+        }
         > ul {
+            @media ($mobile) {
+                margin: 20px 0;
+            }
             &.navbar-nav {
                 padding: 0;
             }
             li {
+                @media ($mobile) {
+                    margin: 0;
+                    padding-right: 10px;
+                    border-right: 5px solid transparent;
+                    &.active {
+                        border-color:$main-color;
+                    }
+                }
                 &:not(:last-child) {
                     margin-left: 35px;
                 }
@@ -31,6 +74,9 @@
                     &:hover {
                         color: $main-color !important;
                     }
+                    @media ($mobile) {
+                        font-size: 16px;
+                    }
                 }
                 &.active {
                     a {
@@ -42,6 +88,9 @@
     }
     .nav-search-form {
         position: relative;
+        @media ($mobile) {
+            margin-bottom: 20px !important;
+        }
         .search-input {
             width: 0;
             padding: 0;
@@ -51,6 +100,11 @@
             border-radius: 20px;
             &.active {
                 width: 250px;
+                border: 1px solid gray;
+                padding: 10px;
+            }
+            @media ($mobile) {
+                width: 100%;
                 border: 1px solid gray;
                 padding: 10px;
             }
@@ -71,9 +125,23 @@
     }
     .notifications-link {
         margin-right: 27px;
+        @media ($mobile) {
+            position: absolute;
+            top: 18px;
+            left: 90px;
+        }
     }
     .login-and-register-link {
         margin-right: 70px;
+        @media ($mobile) {
+            margin-right: 0;
+            display: flex;
+            justify-content: center;
+            width: max-content;
+            margin: auto;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
     }
     .user-profile-info {
         background: no-repeat;
@@ -103,5 +171,13 @@
                 weight: 'normal'
             }
         }
+    }
+}
+
+// Custom
+.collapse:not(.show) {
+    @media ($mobile) {
+        display: block !important;
+        height: 0
     }
 }

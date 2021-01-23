@@ -1,5 +1,16 @@
 .footer {
     padding-top: 112px;
+    .container {
+        > .row {
+            > div {
+                &:not(:last-child) {
+                    @media ($mobile) {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
     .footer-heading {
         color: $black-color;
         font: {
@@ -7,6 +18,10 @@
             weight: normal;
         }
         margin-bottom: 32px;
+        @media ($mobile) {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
     }
     ul {
         padding: 0;
@@ -26,6 +41,10 @@
                     weight: normal
                 }
                 width: 66%;
+                @media ($mobile) {
+                    font-size: 14px;
+                    width: 100%;
+                }
             }
             margin-bottom: 25px;
         }
@@ -50,6 +69,9 @@
                 flex: 0 0 50%;
                 max-width: 50%;
                 margin-bottom: 17px;
+                @media ($mobile) {
+                    margin-bottom: 10px
+                }
                 a {
                     color: $black-color;
                     text-decoration: underline !important;
@@ -57,6 +79,9 @@
                     font: {
                         size: 16px; 
                         weight: normal;
+                    }
+                    @media ($mobile) {
+                        font-size: 14px;
                     }
                 }
             }
@@ -68,6 +93,9 @@
             flex-direction: row;
             &:not(:last-child) {
                 margin-bottom: 18px;
+                @media ($mobile) {
+                    margin-bottom: 10px;
+                }
             }
             span {
                 display: inline-block;
@@ -79,6 +107,9 @@
                     weight: normal
                 }
                 color: $black-color;
+                @media ($mobile) {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -86,12 +117,19 @@
         border-top: 1px solid $gray-color-4;
         padding: 30px 0;
         margin-top: 30px;
+        @media ($mobile) {
+            padding: 20px 0;
+            margin-top: 20px;
+        }
         p {
             color: $black-color;
             margin: 0;
             font: {
                 size: 18px;
                 weight: normal
+            }
+            @media ($mobile) {
+                font-size: 12px;
             }
         }
     }

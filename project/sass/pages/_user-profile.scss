@@ -3,16 +3,26 @@
     .left-side {
         border-radius: 15px;
         padding: 60px;
+        @media ($mobile) {
+            padding: 15px;
+        }
     }
     form.user-form {
         width: 330px;
         margin: auto;
+        @media ($mobile) {
+            width: auto;
+        }
         .user-profile-form-img {
             margin-bottom: 32px;
             img {
                 width: 238px;
                 height: 223px;
                 object-fit: cover;
+                @media ($mobile) {
+                    width: 238px;
+                    height: auto;
+                }
             }
         }
         button.main-btn {
@@ -22,6 +32,9 @@
             box-shadow: none;
             cursor: pointer;
             height: 44px;
+            @media ($mobile) {
+                height: 35px;
+            }
             &:focus,
             &:active {
                 outline: none;

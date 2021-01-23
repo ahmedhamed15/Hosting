@@ -533,6 +533,9 @@
 
 .register-section {
     width: 900px !important;
+    @media ($mobile) {
+        width: auto !important;
+    }
 }
 
 .requirements-agreement {
@@ -541,6 +544,9 @@
         font-size: 18px;
         text-decoration: underline;
         text-underline-position: under;
+        @media ($mobile) {
+            font-size: 15px;
+        }
     }
 }
 
@@ -554,8 +560,14 @@
             size: 20px;
             weight: 400
         }
+        @media ($mobile) {
+            font-size: 18px;
+        }
         &:last-child {
             font-size: 18px;
+            @media ($mobile) {
+                font-size: 15px;
+            }
             a {
                 color: $black-color;
                 text-decoration: underline !important;
@@ -575,12 +587,35 @@
         size: 20px;
         weight: bold
     }
+    @media ($mobile) {
+        text-align: center;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
 
 .resend-code {
+    @media ($mobile) {
+        font-size: 14px;
+    }
     a {
         text-decoration: underline !important;
         text-underline-position: under;
         color: $black-color;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .create-a-new-acc-link p,
+    .create-a-new-acc-link a,
+    .forget-pass-link a {
+        font-size: 15px;
+    }
+    .create-a-new-acc-link {
+        text-align: right;
+        p {
+            margin-bottom: 8px;
+        }
     }
 }

@@ -5,24 +5,49 @@
     }
     .main-section-info {
         margin-bottom: 20px !important; 
+        @media ($mobile) {
+            margin-bottom: 0 !important
+        }
         > h2 {
             &:after {
                 right: 0 !important;
                 left: auto !important;
             }
             margin-bottom: 45px;
+            @media ($mobile) {
+                margin-bottom: 20px;
+            }
         }
         > p {
             margin-bottom: 20px;
             margin-left: 0;
             margin-right: 0;
             width: 70%;
+            @media ($mobile) {
+                margin-bottom: 40px;
+                width: 100%;
+            }
         }
     }
     .app-content {
         background-color: $gray-color-4;
         border-radius: 15px;
         padding: 65px 85px 0;
+        @media ($mobile) {
+            padding: 45px
+        }
+        .download-links {
+            @media ($mobile) {
+                display: flex;
+                a {
+                    margin: 0;
+                    padding: 0 5px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
         a {
             cursor: pointer;
         }

@@ -6,9 +6,11 @@ $(function() {
 
 
     /* START :: Navbar Search */
-    navSearchSubmit.on('click', function() {
-        $(this).prev('.search-input').toggleClass('active');
-    });
+    if ($(window).width() > 768) {
+        navSearchSubmit.on('click', function() {
+            $(this).prev('.search-input').toggleClass('active');
+        });
+    }
     /* END :: Navbar Search */
 
 
@@ -31,19 +33,21 @@ $(function() {
             {
             breakpoint: 768,
             settings: {
-                arrows: false,
+                arrows: true,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 3
+                slidesToShow: 3,
+                slidesToScroll: 1
             }
             },
             {
             breakpoint: 480,
             settings: {
-                arrows: false,
+                arrows: true,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 1
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
             }
         ]

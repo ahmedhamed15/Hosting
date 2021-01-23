@@ -9,6 +9,9 @@
         size: 18px;
         weight: normal
     }
+    @media ($mobile) {
+        font-size: 14px;
+    }
     &:hover {
         box-shadow: 2px 5px 15px -10px $gray-color-2;
         color: $white-color;

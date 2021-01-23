@@ -2,6 +2,10 @@
     height: 100vh;
     position: relative;
     background-image: linear-gradient($white-color, $gray-color-3);
+    @media ($mobile) {
+        height: auto;
+        min-height: 100vh;
+    }
     &:after {
         content: "";
         position: absolute;
@@ -13,6 +17,9 @@
         height: 100%;
         background: url('../images/Header/header-main-img.svg') no-repeat left center fixed;
         background-size: cover;
+        @media ($mobile) {
+            display: none;
+        }
     }
     > div,
     > div > .row {
@@ -24,11 +31,17 @@
         justify-content: center; 
         .header-info {
             margin-top: 70px;
+            @media ($mobile) {
+                margin-top: 100px;
+            }
             h1 {
                 font: {
                     size: 46px;
                     weight: 400 
                 };
+                @media ($mobile) {
+                    font-size: 31px;
+                }
                 &:after {
                     content: "";
                     background: url('../images/Header/dream-home.svg') no-repeat center center;
@@ -36,6 +49,10 @@
                     width: 48px;
                     height: 48px;
                     display: inline-block;
+                    @media ($mobile) {
+                        width: 35px;
+                        height: 35px;
+                    }
                 }
             }
             p {
@@ -44,6 +61,9 @@
                     weight: normal 
                 };
                 margin-bottom: 50px;
+                @media ($mobile) {
+                    font-size: 21px;
+                }
             }
         }
         .all-services {
