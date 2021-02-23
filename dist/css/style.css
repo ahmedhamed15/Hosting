@@ -2884,6 +2884,166 @@
     .create-a-new-acc-link p {
       margin-bottom: 8px; } }
 
+.publish-new-building {
+  margin-top: 140px; }
+  .publish-new-building .publish-building-block {
+    padding: 30px 15px;
+    border-radius: 15px; }
+    .publish-new-building .publish-building-block .h3 {
+      font-size: 21px;
+      font-weight: normal;
+      margin-bottom: 30px; }
+    .publish-new-building .publish-building-block ul {
+      padding: 0; }
+      .publish-new-building .publish-building-block ul li {
+        font-size: 16px;
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+        position: relative; }
+        .publish-new-building .publish-building-block ul li:not(:last-child) {
+          margin-bottom: 30px; }
+          .publish-new-building .publish-building-block ul li:not(:last-child)::after {
+            content: "";
+            width: 1px;
+            height: 20px;
+            background-color: #555555;
+            display: inline-block;
+            position: absolute;
+            right: 6px;
+            top: 28px; }
+        .publish-new-building .publish-building-block ul li::before {
+          content: "";
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          border: 1px solid #555555;
+          display: inline-block;
+          margin-left: 10px; }
+        .publish-new-building .publish-building-block ul li.stroke-circle::before {
+          border-color: #28A745; }
+        .publish-new-building .publish-building-block ul li.fill-circle:before, .publish-new-building .publish-building-block ul li.fill-circle:after {
+          background-color: #28A745;
+          border-color: #28A745; }
+  .publish-new-building .main-content-of-building {
+    padding: 30px;
+    border-radius: 15px; }
+    .publish-new-building .main-content-of-building form .form-group {
+      margin-bottom: 40px; }
+    .publish-new-building .main-content-of-building form input,
+    .publish-new-building .main-content-of-building form select {
+      height: 45px; }
+    .publish-new-building .main-content-of-building form .radio-inputs input + label,
+    .publish-new-building .main-content-of-building form .checkbox-inputs input + label {
+      min-width: 140px;
+      height: 45px;
+      border-radius: 25px;
+      border: 1px solid #ECEAEA;
+      font-size: 17px;
+      color: #4D4D4D;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 25px;
+      cursor: pointer; }
+    .publish-new-building .main-content-of-building form .radio-inputs input:checked + label,
+    .publish-new-building .main-content-of-building form .checkbox-inputs input:checked + label {
+      background-color: #94191C;
+      color: #FFF; }
+      .publish-new-building .main-content-of-building form .radio-inputs input:checked + label img,
+      .publish-new-building .main-content-of-building form .checkbox-inputs input:checked + label img {
+        filter: invert(1); }
+    .publish-new-building .main-content-of-building form .radio-inputs input[type="radio"],
+    .publish-new-building .main-content-of-building form .radio-inputs input[type="checkbox"],
+    .publish-new-building .main-content-of-building form .checkbox-inputs input[type="radio"],
+    .publish-new-building .main-content-of-building form .checkbox-inputs input[type="checkbox"] {
+      display: none; }
+    .publish-new-building .main-content-of-building form .checkbox-inputs input + label {
+      min-width: 72px;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      margin-left: 0; }
+    .publish-new-building .main-content-of-building form .checkbox-inputs .checkbox-wrapper {
+      margin-bottom: 25px;
+      margin-left: 25px;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center; }
+      .publish-new-building .main-content-of-building form .checkbox-inputs .checkbox-wrapper span {
+        text-align: center; }
+    .publish-new-building .main-content-of-building form .select-date span {
+      display: inline-block;
+      margin-left: 15px; }
+    .publish-new-building .main-content-of-building form .select-date input.custom-date {
+      border-radius: 25px;
+      border: 1px solid #ECEAEA;
+      padding: 5px 10px; }
+    .publish-new-building .main-content-of-building form .form-actions__btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .publish-new-building .main-content-of-building form .form-actions__btns .next-btn,
+      .publish-new-building .main-content-of-building form .form-actions__btns .prev-link {
+        display: inline-block;
+        width: 200px !important;
+        height: 45px;
+        border-radius: 40px; }
+      .publish-new-building .main-content-of-building form .form-actions__btns .prev-link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #262626;
+        background-color: #FFF;
+        color: #262626; }
+    .publish-new-building .main-content-of-building form .attach-img-field {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px; }
+      .publish-new-building .main-content-of-building form .attach-img-field > [for="attach-img"] {
+        color: #28A745;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: underline;
+        cursor: pointer; }
+        .publish-new-building .main-content-of-building form .attach-img-field > [for="attach-img"]:after {
+          content: "+";
+          display: inline-flex;
+          border: 2px solid #28A745;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          font-size: 21px;
+          margin-right: 7px;
+          margin-top: 0; }
+    .publish-new-building .main-content-of-building form .attached-imgs-wrapper .attached-img {
+      position: relative;
+      overflow: hidden;
+      width: 145px;
+      height: 156px; }
+      .publish-new-building .main-content-of-building form .attached-imgs-wrapper .attached-img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        border-radius: 16px; }
+      .publish-new-building .main-content-of-building form .attached-imgs-wrapper .attached-img a {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        background-color: #FFF;
+        color: #000;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 41px;
+        height: 41px;
+        border-radius: 16px; }
+
 .footer {
   padding-top: 112px; }
   @media (max-width: 768px) {
