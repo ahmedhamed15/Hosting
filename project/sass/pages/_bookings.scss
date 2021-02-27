@@ -1,5 +1,8 @@
 .bookings {
     margin-top: 140px;
+    @media ($mobile) {
+        margin-top: 110px;
+    }
     .happy-trips {
         padding: 70px 70px 70px 250px;
         border-radius: 15px;
@@ -9,6 +12,10 @@
         }
         position: relative;
         margin-bottom: 24px;
+        @media ($mobile) {
+            padding: 16px 16px 16px 75px;
+            font-size: 21px;
+        }
         &:after {
             content: "";
             background: url('../images/Global/book-now.svg') no-repeat center center;
@@ -19,6 +26,12 @@
             position: absolute;
             left: 96px;
             top: -30px;
+            @media ($mobile) {
+                left: 12px;
+                top: -14px;
+                width: 85px;
+                height: 82px;
+            }
         }
     }
 }

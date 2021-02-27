@@ -99,6 +99,10 @@
                     width: 32px;
                     height: 32px;
                     object-fit: cover;
+                    @media ($mobile) {
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
             }
         }
@@ -113,15 +117,26 @@
             padding: 27px;
             display: inline-block;
             color: $black-color;
+            @media ($mobile) {
+                padding: 20px;
+            }
             img {   
                 width: 34px;
                 height: 34px;
                 margin-left: 7px;
+                @media ($mobile) {
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 0;
+                }
             }
             span {
                 font: {
                     size: 21px;
                     weight: normal;
+                }
+                @media ($mobile) {
+                    font-size: 18px;
                 }
             }
         }
@@ -157,11 +172,18 @@
                         weight: normal;
                     }
                     margin-bottom: 10px;
+                    @media ($mobile) {
+                        font-size: 18px;
+                        margin-bottom: 4px;
+                    }
                 }
                 span {
                     font: {
                         size: 18px;
                         weight: normal;
+                    }
+                    @media ($mobile) {
+                        font-size: 13px;
                     }
                 }
             }
@@ -175,6 +197,9 @@
                 font: {
                     size: 20px;
                     weight: 300;
+                }
+                @media ($mobile) {
+                    font-size: 18px;
                 }
                 &.verified-booking {
                     width: 175px;
@@ -298,6 +323,10 @@
                 margin-bottom: 20px;
                 .col-6 {
                     display: flex;
+                    @media ($mobile) {
+                        flex: 0 0 25%;
+                        max-width: 25%;
+                    }
                 }
                 .item-detailes {
                     margin-bottom: 30px;
@@ -306,17 +335,27 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        @media ($mobile) {
+                            margin-bottom: 3px;
+                        }
                         span {
                             font: {
                                 size: 28px;
                                 weight: normal
                             }
                             margin-left: 12px;
+                            @media ($mobile) {
+                                font-size: 16px;
+                            }
                         }
                         img {
                             width: 40px;
                             height: 40px;
                             object-fit: contain;
+                            @media ($mobile) {
+                                width: 24px;
+                                height: 24px;
+                            }
                         }
                     }
                     .item-label {
@@ -325,6 +364,9 @@
                             weight: normal
                         }
                         margin-bottom: 0;
+                        @media ($mobile) {
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -334,16 +376,25 @@
                     margin-bottom: 23px;
                     .currency-and-price {
                         margin-bottom: 10px;
+                        @media ($mobile) {
+                            margin-bottom: 2px;
+                        }
                         .price {
                             font: {
                                 size: 26px;
                                 weight: normal
+                            }
+                            @media ($mobile) {
+                                font-size: 16px;
                             }
                         }
                         .currency {
                             font: {
                                 size: 22px;
                                 weight: 300
+                            }
+                            @media ($mobile) {
+                                font-size: 12px;
                             }
                         }
                     }
@@ -352,6 +403,9 @@
                             size: 18px;
                             weight: normal
                         }
+                        @media ($mobile) {
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -359,10 +413,20 @@
                 display: flex;
                 flex-direction: row;
                 margin-bottom: 50px;
+                @media ($mobile) {
+                    flex-wrap: wrap;
+                }
                 .extra-detailes-box {
                     padding-left: 30px;
                     margin-left: 30px;
                     position: relative;
+                    @media ($mobile) {
+                        flex: 0 0 calc(50% - 30px);
+                        max-width: calc(50% - 30px);
+                        &::after {
+                            display: none;
+                        }
+                    }
                     &:not(:last-child) {
                         &:after {
                             content: "";
@@ -381,11 +445,18 @@
                             weight: normal
                         }
                         margin-bottom: 11px;
+                        @media ($mobile) {
+                            font-size: 16px;
+                            margin-bottom: 2px;
+                        }
                     }
                     .secondary-label {
                         font: {
                             size: 18px;
                             weight: normal
+                        }
+                        @media ($mobile) {
+                            font-size: 12px;
                         }
                     }
                 }
@@ -395,21 +466,36 @@
                 .extra-services-boxes {
                     display: flex;
                     flex-direction: row;
+                    @media ($mobile) {
+                        flex-wrap: wrap;
+                    }
                     .service-box {
                         margin-bottom: 20px;
                         &:not(:last-child) {
                             margin-left: 75px;
                         }
+                        @media ($mobile) {
+                            flex: 0 0 25%;
+                            max-width: 25%;
+                            margin-left: 0 !important;
+                        }
                         img {
                             width: 40px;
                             height: 40px;
                             object-fit: contain;
+                            @media ($mobile) {
+                                width: 24px;
+                                height: 24px;
+                            }
                         }
                         p {
                             margin: 0;
                             font: {
                                 size: 18px;
                                 weight: normal;
+                            }
+                            @media ($mobile) {
+                                font-size: 11px;
                             }
                         }
                     }
@@ -420,6 +506,9 @@
                 p {
                     margin: 0;
                     font-size: 17px;
+                    @media ($mobile) {
+                        font-size: 13px;
+                    }
                 }
             }
         }

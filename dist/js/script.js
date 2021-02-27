@@ -194,7 +194,6 @@ $(function() {
     
     /* START :: Show and hide password */
     $('.password-field > i').on('click', function() {
-        console.log("AHMED")
         if ($(this).hasClass('show-pass')) {
             $(this).prev('input').attr('type', 'text');
         } else {
