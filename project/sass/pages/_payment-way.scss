@@ -3,6 +3,9 @@
     .payment-form {
         border-radius: 15px;
         padding: 47px 96px;
+        @media ($mobile) {
+            padding: 30px 16px;
+        }
         .budget {
             width: 322px;
             padding: 23px 23px 45px;

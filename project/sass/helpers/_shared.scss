@@ -191,13 +191,16 @@ body {
             size: 27px;
             weight: normal
         }
-    }
+    } 
 }
 
 .notifications,
 .favorite-list,
 .top-section-login-info {
     margin-top: 140px;
+    @media ($mobile) {
+        margin-top: 90px;
+    }
 }
 .all-favorite-items {
     .main-hosting-card {

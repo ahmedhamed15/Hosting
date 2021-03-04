@@ -192,6 +192,10 @@
     max-height: 135px;
     -o-object-fit: cover;
        object-fit: cover; }
+    @media (max-width: 768px) {
+      .main-hosting-card .card-img-top {
+        height: 155px;
+        max-height: 155px; } }
   .main-hosting-card .persons-nums {
     position: absolute;
     top: 115px;
@@ -282,6 +286,14 @@
       justify-content: center;
       border-radius: 10px;
       background-color: #FFFFFF; }
+      @media (max-width: 768px) {
+        .main-hosting-card .card-body .favorite-link {
+          right: 20px;
+          top: 20px;
+          width: 30px;
+          height: 30px; }
+          .main-hosting-card .card-body .favorite-link img {
+            width: 15px; } }
     .main-hosting-card .card-body .simple-view-info .simple-price {
       margin-bottom: 7px; }
       .main-hosting-card .card-body .simple-view-info .simple-price .price {
@@ -532,6 +544,9 @@
     font-weight: normal;
     text-decoration: underline !important;
     text-underline-position: under; }
+    @media (max-width: 768px) {
+      .booking-card .booking-actions .cancel-booking {
+        font-size: 16px; } }
 
 .notification-card {
   display: flex;
@@ -933,12 +948,30 @@
   border-radius: 15px;
   padding: 18px 10px;
   min-height: 450px; }
+  @media (max-width: 768px) {
+    .basic-filter {
+      min-height: auto;
+      margin-bottom: 25px; } }
   .basic-filter .basic-filter-title {
     margin-bottom: 23px;
     font-size: 21px;
     font-weight: normal; }
+    @media (max-width: 768px) {
+      .basic-filter .basic-filter-title {
+        font-size: 19px;
+        margin-bottom: 20px; } }
   .basic-filter .links-of-basic-filters {
     padding: 0; }
+    @media (max-width: 768px) {
+      .basic-filter .links-of-basic-filters {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; } }
+    @media (max-width: 768px) {
+      .basic-filter .links-of-basic-filters li {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 8px; } }
     .basic-filter .links-of-basic-filters li:not(:last-child) {
       margin-bottom: 8px; }
     .basic-filter .links-of-basic-filters li a {
@@ -951,6 +984,10 @@
       .basic-filter .links-of-basic-filters li a.active, .basic-filter .links-of-basic-filters li a:hover {
         background-color: #28A745;
         color: #FFFFFF; }
+      @media (max-width: 768px) {
+        .basic-filter .links-of-basic-filters li a {
+          padding: 7px 15px;
+          border-radius: 9px; } }
 
 .content-with-filter {
   margin-top: 60px; }
@@ -1108,6 +1145,11 @@
     width: 522px;
     height: 290px;
     margin-bottom: 26px; }
+    @media (max-width: 768px) {
+      .shared-detailed-page-header .hotel-slider .main-img {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px; } }
     .shared-detailed-page-header .hotel-slider .main-img img {
       width: 100%;
       height: 100%;
@@ -1117,6 +1159,11 @@
   .shared-detailed-page-header .hotel-slider .slider-nav {
     display: flex;
     flex-direction: row; }
+    @media (max-width: 768px) {
+      .shared-detailed-page-header .hotel-slider .slider-nav {
+        width: 100%;
+        overflow: auto;
+        justify-content: center; } }
     .shared-detailed-page-header .hotel-slider .slider-nav .thumbnail-img {
       opacity: 0.5;
       cursor: pointer; }
@@ -1124,12 +1171,19 @@
         opacity: 1; }
       .shared-detailed-page-header .hotel-slider .slider-nav .thumbnail-img:not(:last-child) {
         margin-left: 35px; }
+        @media (max-width: 768px) {
+          .shared-detailed-page-header .hotel-slider .slider-nav .thumbnail-img:not(:last-child) {
+            margin-left: 15px; } }
       .shared-detailed-page-header .hotel-slider .slider-nav .thumbnail-img img {
         width: 76px;
         height: 76px;
         -o-object-fit: cover;
            object-fit: cover;
         border-radius: 5px; }
+        @media (max-width: 768px) {
+          .shared-detailed-page-header .hotel-slider .slider-nav .thumbnail-img img {
+            width: 50px;
+            height: 50px; } }
 
 .carousel-wrap {
   width: 535px;
@@ -2111,6 +2165,9 @@
   .payment-way .payment-form {
     border-radius: 15px;
     padding: 47px 96px; }
+    @media (max-width: 768px) {
+      .payment-way .payment-form {
+        padding: 30px 16px; } }
     .payment-way .payment-form .budget {
       width: 322px;
       padding: 23px 23px 45px;
@@ -2549,13 +2606,29 @@
   flex-direction: row;
   align-items: center;
   margin-bottom: 26px; }
+  @media (max-width: 768px) {
+    .detailed-page-shared .left-side .arrive-and-leave-time {
+      padding: 20px 16px;
+      flex-wrap: wrap; } }
   .detailed-page-shared .left-side .arrive-and-leave-time > div:first-child, .detailed-page-shared .left-side .arrive-and-leave-time > div:nth-child(2) {
     flex: 0 0 40%;
     max-width: 40%;
     padding-left: 48.5px; }
+    @media (max-width: 768px) {
+      .detailed-page-shared .left-side .arrive-and-leave-time > div:first-child, .detailed-page-shared .left-side .arrive-and-leave-time > div:nth-child(2) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 0; } }
+  @media (max-width: 768px) {
+    .detailed-page-shared .left-side .arrive-and-leave-time > div:nth-child(2) {
+      padding-left: 0; } }
   .detailed-page-shared .left-side .arrive-and-leave-time > div:last-child {
     flex: 0 0 20%;
     max-width: 20%; }
+    @media (max-width: 768px) {
+      .detailed-page-shared .left-side .arrive-and-leave-time > div:last-child {
+        flex: 0 0 100%;
+        max-width: 100%; } }
   .detailed-page-shared .left-side .arrive-and-leave-time > div.arrive-time {
     position: relative; }
     .detailed-page-shared .left-side .arrive-and-leave-time > div.arrive-time:after {
@@ -2572,10 +2645,17 @@
     font-size: 21px;
     font-weight: normal;
     margin-bottom: 10px; }
+    @media (max-width: 768px) {
+      .detailed-page-shared .left-side .arrive-and-leave-time > div h5 {
+        font-size: 16px; } }
   .detailed-page-shared .left-side .arrive-and-leave-time > div p {
     margin-bottom: 0;
     font-size: 18px;
     font-weight: 300; }
+    @media (max-width: 768px) {
+      .detailed-page-shared .left-side .arrive-and-leave-time > div p {
+        font-size: 12px;
+        margin-bottom: 25px; } }
 
 .detailed-page-shared .left-side .select-rooms > h3 {
   font-size: 23px;
@@ -2587,12 +2667,21 @@
   border: 1px solid #BFC1C3;
   border-radius: 15px;
   margin-bottom: 22px; }
+  @media (max-width: 768px) {
+    .detailed-page-shared .left-side .select-rooms .select-room-box {
+      padding: 16px; } }
+  @media (max-width: 768px) {
+    .detailed-page-shared .left-side .select-rooms .select-room-box .room-img {
+      margin-bottom: 15px; } }
   .detailed-page-shared .left-side .select-rooms .select-room-box .room-img img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 5px; }
+    @media (max-width: 768px) {
+      .detailed-page-shared .left-side .select-rooms .select-room-box .room-img img {
+        height: 165px; } }
   .detailed-page-shared .left-side .select-rooms .select-room-box .room-content > h3 {
     font-size: 20px;
     font-weight: normal;
@@ -2634,10 +2723,16 @@
   font-weight: normal;
   margin-bottom: 22px;
   margin-top: 40px; }
+  @media (max-width: 768px) {
+    .detailed-page-shared .left-side .hotel-info h4 {
+      margin-bottom: 15px; } }
 
 .detailed-page-shared .left-side .hotel-info p {
   font-size: 17px;
   font-weight: normal; }
+  @media (max-width: 768px) {
+    .detailed-page-shared .left-side .hotel-info p {
+      font-size: 15px; } }
 
 .top-section-login-info .login-now {
   border-radius: 13px;
@@ -2647,15 +2742,29 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px; }
+  @media (max-width: 768px) {
+    .top-section-login-info .login-now {
+      border-radius: 10px;
+      padding: 16px;
+      display: block; } }
   .top-section-login-info .login-now p {
     font-size: 20px;
     font-weight: normal; }
+    @media (max-width: 768px) {
+      .top-section-login-info .login-now p {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px; } }
 
 .top-section-login-info .booking-information {
   border-radius: 15px;
   padding: 28px 23px;
   position: relative;
   overflow: hidden; }
+  @media (max-width: 768px) {
+    .top-section-login-info .booking-information {
+      border-radius: 10px;
+      padding: 16px; } }
   .top-section-login-info .booking-information:after, .top-section-login-info .booking-information:before {
     content: "";
     display: block;
@@ -2678,6 +2787,9 @@
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 24px; }
+    @media (max-width: 768px) {
+      .top-section-login-info .booking-information > h4 {
+        margin-bottom: 10px; } }
   .top-section-login-info .booking-information > .booking-img {
     margin-bottom: 20px; }
     .top-section-login-info .booking-information > .booking-img img {
@@ -2690,6 +2802,9 @@
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 11px; }
+    @media (max-width: 768px) {
+      .top-section-login-info .booking-information > .booking-detailes h3 {
+        font-size: 15px; } }
   .top-section-login-info .booking-information > .booking-detailes .booking-date {
     padding-bottom: 15px;
     border-bottom: 1px solid #BFC1C3;
@@ -2697,10 +2812,18 @@
     .top-section-login-info .booking-information > .booking-detailes .booking-date span {
       font-size: 17px;
       font-weight: 300; }
+    @media (max-width: 768px) {
+      .top-section-login-info .booking-information > .booking-detailes .booking-date {
+        font-size: 12px;
+        margin-bottom: 10px; } }
   .top-section-login-info .booking-information .numbers-of-booking {
     font-size: 17px;
     font-weight: 300;
     margin-bottom: 15px; }
+    @media (max-width: 768px) {
+      .top-section-login-info .booking-information .numbers-of-booking {
+        font-size: 15px;
+        margin-bottom: 10px; } }
   .top-section-login-info .booking-information .total-price {
     display: flex;
     justify-content: space-between;
@@ -2741,6 +2864,12 @@
       width: 60%; }
       .top-section-login-info .booking-information .sale-code input:focus, .top-section-login-info .booking-information .sale-code input:active {
         outline: 0; }
+      @media (max-width: 768px) {
+        .top-section-login-info .booking-information .sale-code input {
+          border-radius: 10px;
+          padding: 5px;
+          width: 65%;
+          font-size: 13px; } }
     .top-section-login-info .booking-information .sale-code button.main-btn {
       background-color: #72BF44;
       border: 0;
@@ -2749,18 +2878,34 @@
 .top-section-login-info .right-hotel-card {
   padding: 30px 20px;
   border-radius: 15px; }
+  @media (max-width: 768px) {
+    .top-section-login-info .right-hotel-card {
+      padding: 16px;
+      margin-bottom: 35px; } }
   .top-section-login-info .right-hotel-card .card-img img {
     width: 100%;
     height: 218px;
-    border-radius: 15px; }
+    border-radius: 15px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+    @media (max-width: 768px) {
+      .top-section-login-info .right-hotel-card .card-img img {
+        height: 165px;
+        margin-bottom: 15px; } }
   .top-section-login-info .right-hotel-card .all-detailes > h3 {
     margin-bottom: 14px; }
     .top-section-login-info .right-hotel-card .all-detailes > h3 span {
       font-size: 33px;
       font-weight: normal; }
+      @media (max-width: 768px) {
+        .top-section-login-info .right-hotel-card .all-detailes > h3 span {
+          font-size: 24px; } }
     .top-section-login-info .right-hotel-card .all-detailes > h3 .rate {
       font-size: 22px;
       font-weight: 300; }
+      @media (max-width: 768px) {
+        .top-section-login-info .right-hotel-card .all-detailes > h3 .rate {
+          font-size: 18px; } }
   .top-section-login-info .right-hotel-card .all-detailes .hotel-address,
   .top-section-login-info .right-hotel-card .all-detailes .bed-type,
   .top-section-login-info .right-hotel-card .all-detailes .rooms-and-nights {
@@ -2768,6 +2913,12 @@
     font-weight: normal;
     color: #4D4D4D;
     margin-bottom: 24px; }
+    @media (max-width: 768px) {
+      .top-section-login-info .right-hotel-card .all-detailes .hotel-address,
+      .top-section-login-info .right-hotel-card .all-detailes .bed-type,
+      .top-section-login-info .right-hotel-card .all-detailes .rooms-and-nights {
+        font-size: 15px;
+        margin-bottom: 6px; } }
   .top-section-login-info .right-hotel-card .all-detailes .hotel-address span {
     font-size: 16px;
     font-weight: 300; }
@@ -2776,15 +2927,28 @@
     margin-bottom: 6px; }
   .top-section-login-info .right-hotel-card .all-detailes .rooms-and-nights {
     color: #000000; }
+    @media (max-width: 768px) {
+      .top-section-login-info .right-hotel-card .all-detailes .rooms-and-nights {
+        margin-top: 20px; } }
   .top-section-login-info .right-hotel-card .all-detailes .card-date {
     color: #231F20;
     font-size: 17px;
     font-weight: normal; }
+    @media (max-width: 768px) {
+      .top-section-login-info .right-hotel-card .all-detailes .card-date {
+        font-size: 15px; } }
   .top-section-login-info .right-hotel-card .all-detailes .flat-services {
     display: flex;
     align-items: center; }
+    @media (max-width: 768px) {
+      .top-section-login-info .right-hotel-card .all-detailes .flat-services {
+        flex-wrap: wrap;
+        justify-content: center; } }
     .top-section-login-info .right-hotel-card .all-detailes .flat-services div:not(:last-child) {
       margin-left: 15px; }
+      @media (max-width: 768px) {
+        .top-section-login-info .right-hotel-card .all-detailes .flat-services div:not(:last-child) {
+          margin: 0; } }
     .top-section-login-info .right-hotel-card .all-detailes .flat-services div span {
       font-size: 19px;
       font-weight: normal;
@@ -2794,15 +2958,32 @@
       height: 31px;
       -o-object-fit: cover;
          object-fit: cover; }
+    @media (max-width: 768px) {
+      .top-section-login-info .right-hotel-card .all-detailes .flat-services > div {
+        flex: 0 0 25%;
+        max-width: 25%;
+        margin-bottom: 20px !important; } }
 
 .guest-info {
   border-radius: 15px;
   margin-bottom: 45px;
   padding: 25px 30px; }
+  @media (max-width: 768px) {
+    .guest-info {
+      padding-left: 16px !important;
+      padding-right: 16px !important; } }
   .guest-info .gender > h4 {
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 37px; }
+    @media (max-width: 768px) {
+      .guest-info .gender > h4 {
+        margin-bottom: 30px; } }
+  @media (max-width: 768px) {
+    .guest-info .gender .form-group {
+      display: inline-block; }
+      .guest-info .gender .form-group:first-of-type {
+        margin-left: 15px; } }
   .guest-info .gender label {
     border: 1px solid #231F20;
     border-radius: 20px;
@@ -2810,6 +2991,10 @@
     height: 111px;
     overflow: hidden;
     cursor: pointer; }
+    @media (max-width: 768px) {
+      .guest-info .gender label {
+        width: 145px !important;
+        height: 90px !important; } }
     .guest-info .gender label:after {
       content: "";
       background-size: contain;
@@ -2825,6 +3010,9 @@
 
 .login-or-register {
   padding-right: 30px; }
+  @media (max-width: 768px) {
+    .login-or-register {
+      padding-right: 0; } }
   .login-or-register > h5 {
     font-size: 16px;
     font-weight: normal;
@@ -2840,6 +3028,10 @@
     padding-top: 8px;
     padding-bottom: 8px;
     margin-top: 35px; }
+    @media (max-width: 768px) {
+      .login-or-register .main-btn {
+        margin-top: 30px;
+        width: 135px; } }
     .login-or-register .main-btn:focus, .login-or-register .main-btn:active {
       outline: 0; }
 
@@ -2851,6 +3043,9 @@
       width: 190px; }
     .buttom-section-payment-info .payment-way .payment-form form input.ccv {
       width: 116px; }
+    @media (max-width: 768px) {
+      .buttom-section-payment-info .payment-way .payment-form form input.expire-date, .buttom-section-payment-info .payment-way .payment-form form input.ccv {
+        width: 100%; } }
   .buttom-section-payment-info .payment-way .payment-form form .main-btn {
     width: 255px;
     border: none;
@@ -2860,8 +3055,16 @@
     display: flex;
     justify-content: center;
     margin-top: 40px; }
+    @media (max-width: 768px) {
+      .buttom-section-payment-info .payment-way .payment-form form .main-btn {
+        width: 100%;
+        margin: 15px 0 -25px; } }
   .buttom-section-payment-info .payment-way .payment-form form .payment-info {
     margin-top: 40px; }
+    @media (max-width: 768px) {
+      .buttom-section-payment-info .payment-way .payment-form form .payment-info {
+        margin-top: 10px;
+        margin-bottom: 10px; } }
     .buttom-section-payment-info .payment-way .payment-form form .payment-info p {
       font-size: 14px;
       font-weight: normal; }
@@ -2869,15 +3072,36 @@
     border: none;
     align-items: center;
     margin-bottom: 55px; }
+    @media (max-width: 768px) {
+      .buttom-section-payment-info .payment-way .nav.nav-tabs {
+        padding-right: 0 !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; } }
+    @media (max-width: 768px) {
+      .buttom-section-payment-info .payment-way .nav.nav-tabs > li:first-child {
+        flex: 0 0 100%;
+        max-width: 100%; } }
     .buttom-section-payment-info .payment-way .nav.nav-tabs .nav-item {
       border: 1px solid #BFC1C3;
       border-radius: 10px;
       width: 246px; }
+      @media (max-width: 768px) {
+        .buttom-section-payment-info .payment-way .nav.nav-tabs .nav-item {
+          width: 50%;
+          flex: 0 0 calc(50% - 4px);
+          max-width: calc(50% - 4px); } }
       .buttom-section-payment-info .payment-way .nav.nav-tabs .nav-item:not(:last-child) {
         margin-left: 30px; }
+        @media (max-width: 768px) {
+          .buttom-section-payment-info .payment-way .nav.nav-tabs .nav-item:not(:last-child) {
+            margin: 0; } }
       .buttom-section-payment-info .payment-way .nav.nav-tabs .nav-item.visa-tab {
         display: flex;
         margin-right: auto; }
+        @media (max-width: 768px) {
+          .buttom-section-payment-info .payment-way .nav.nav-tabs .nav-item.visa-tab {
+            margin-left: 8px; } }
         .buttom-section-payment-info .payment-way .nav.nav-tabs .nav-item.visa-tab a img {
           filter: invert(1); }
         .buttom-section-payment-info .payment-way .nav.nav-tabs .nav-item.visa-tab a.active img {
@@ -2894,6 +3118,9 @@
         justify-content: space-between;
         align-items: center;
         color: #000000; }
+        @media (max-width: 768px) {
+          .buttom-section-payment-info .payment-way .nav.nav-tabs .nav-item a {
+            padding: 7px 14px; } }
         .buttom-section-payment-info .payment-way .nav.nav-tabs .nav-item a.active {
           background-color: #263238 !important;
           color: #FFFFFF; }
@@ -2903,6 +3130,9 @@
       font-size: 20px;
       font-weight: normal;
       margin-bottom: 0; }
+      @media (max-width: 768px) {
+        .buttom-section-payment-info .payment-way .nav.nav-tabs h4 {
+          margin-bottom: 20px; } }
     .buttom-section-payment-info .payment-way .nav.nav-tabs .visa-tab {
       margin-right: auto;
       display: flex; }
@@ -2912,6 +3142,10 @@
     margin: auto;
     padding: 23px 20px;
     margin-bottom: 40px; }
+    @media (max-width: 768px) {
+      .buttom-section-payment-info .payment-way .visa-card-simulator {
+        padding: 16px;
+        width: 100%; } }
     .buttom-section-payment-info .payment-way .visa-card-simulator .logos {
       display: flex;
       justify-content: space-between;
@@ -3462,6 +3696,11 @@ body {
 .favorite-list,
 .top-section-login-info {
   margin-top: 140px; }
+  @media (max-width: 768px) {
+    .notifications,
+    .favorite-list,
+    .top-section-login-info {
+      margin-top: 90px; } }
 
 .all-favorite-items .main-hosting-card {
   padding-left: 9px !important;

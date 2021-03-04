@@ -204,6 +204,11 @@
             width: 522px;
             height: 290px;
             margin-bottom: 26px;
+            @media ($mobile) {
+                width: 100%;
+                height: 200px;
+                margin-bottom: 20px;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -214,6 +219,11 @@
         .slider-nav {
             display: flex;
             flex-direction: row;
+            @media ($mobile) {
+                width: 100%;
+                overflow: auto;
+                justify-content: center;
+            }
             .thumbnail-img {
                 @extend .trans-effect;
                 opacity: 0.5;
@@ -223,12 +233,20 @@
                 }
                 &:not(:last-child) {
                     margin-left: 35px;
+                    @media ($mobile) {
+                        margin-left: 15px;
+                    }
                 }
                 img {
                     width: 76px;
                     height: 76px;
                     object-fit: cover;
                     border-radius: 5px;
+                    @media ($mobile) {
+                        width: 50px;
+                        height: 50px;
+
+                    }
                 }
             }
         }

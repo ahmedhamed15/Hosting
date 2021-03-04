@@ -12,6 +12,10 @@
         width: 100%;
         max-height: 135px;
         object-fit: cover;
+        @media ($mobile) {
+            height: 155px;
+            max-height: 155px;
+        }
     }
     .persons-nums {
         position: absolute;
@@ -145,6 +149,15 @@
             justify-content: center;
             border-radius: 10px;
             background-color: $white-color;
+            @media ($mobile) {
+                right: 20px;
+                top: 20px;
+                width: 30px;
+                height: 30px;
+                img {
+                    width: 15px;
+                }
+            }
         }
         .simple-view-info {
             .simple-price {

@@ -524,16 +524,34 @@
             flex-direction: row;
             align-items: center;
             margin-bottom: 26px;
+            @media ($mobile) {
+                padding: 20px 16px;
+                flex-wrap: wrap;
+            }
             > div {
                 &:first-child,
                 &:nth-child(2) {
                     flex: 0 0 40%;
                     max-width: 40%;
                     padding-left: 48.5px;
+                    @media ($mobile) {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                        padding-left: 0;
+                    }
+                }
+                &:nth-child(2) {
+                    @media ($mobile) {
+                        padding-left: 0;
+                    }
                 }
                 &:last-child {
                     flex: 0 0 20%;
                     max-width: 20%;
+                    @media ($mobile) {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
                 }
                 &.arrive-time {
                     position: relative;
@@ -555,12 +573,19 @@
                         weight: normal
                     }
                     margin-bottom: 10px;
+                    @media ($mobile) {
+                        font-size: 16px;
+                    }
                 }   
                 p {
                     margin-bottom: 0;
                     font: {
                         size: 18px;
                         weight: 300
+                    }
+                    @media ($mobile) {
+                        font-size: 12px;
+                        margin-bottom: 25px;
                     }
                 }
             }
@@ -578,12 +603,21 @@
                 border: 1px solid #BFC1C3;
                 border-radius: 15px;
                 margin-bottom: 22px;
+                @media ($mobile) {
+                    padding: 16px;
+                }
                 .room-img {
+                    @media ($mobile) {
+                        margin-bottom: 15px;
+                    }
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                         border-radius: 5px;
+                        @media ($mobile) {
+                            height: 165px;
+                        }
                     }
                 }
                 .room-content {
@@ -662,11 +696,17 @@
                 }
                 margin-bottom: 22px;
                 margin-top: 40px;
+                @media ($mobile) {
+                    margin-bottom: 15px;
+                }
             }
             p {
                 font: {
                     size: 17px;
                     weight: normal
+                }
+                @media ($mobile) {
+                    font-size: 15px;
                 }
             }
         }
