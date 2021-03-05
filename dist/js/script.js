@@ -215,4 +215,17 @@ $(function() {
     /* END :: Add background color for the verify mobile and password */
 
 
+    /* START :: Filters on the mobile */
+    function filterOnMobile(el, parentEl) {
+        $(el).on('click', function() {
+            $(this).toggleClass('div-opend').parents(parentEl).toggleClass('div-opend');
+        });
+    }
+    if ($(window).width() < 769) {
+        filterOnMobile('.detailed-page-shared .rooms-filter > h4', '.rooms-filter');
+        filterOnMobile('.detailed-page-shared .hotel-services-aside > h4', '.hotel-services-aside');
+        filterOnMobile('.building-filter .filter-title', '.building-filter');
+    }
+    /* END :: Filters on the mobile */
+
 });

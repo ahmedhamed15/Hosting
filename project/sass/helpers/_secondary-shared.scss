@@ -21,9 +21,15 @@
     .slick-arrow {
         top: -70px !important;
         transform: translateY(0) !important;
+        @media ($mobile) {
+            top: -60px !important;
+        }
         &.slick-next {
             left: 100px!important;
             right: auto !important;
+            @media ($mobile) {
+                left: 65px !important;
+            }
         }
         &.slick-prev {
             left: 14px!important;

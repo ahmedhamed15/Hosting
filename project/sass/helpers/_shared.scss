@@ -102,6 +102,11 @@ body {
     &:active {
         outline: 0;
     }
+    @media ($mobile) {
+        width: 35px;
+        height: 35px;
+        background-size: contain !important;
+    }
 }
 .slick-next.slick-arrow {
     background: url('../images/Global/right-arrow.svg') no-repeat center center;
@@ -323,6 +328,9 @@ label[for="switch"] {
 	border-radius: 100px;
     position: relative;
     margin-bottom: 0;
+    @media ($mobile) {
+        width: 80px;        
+    }
 }
 
 label[for="switch"]:after {

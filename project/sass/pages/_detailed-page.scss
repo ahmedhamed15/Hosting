@@ -217,6 +217,13 @@
         padding: 25px 20px;
         position: relative;
         margin-bottom: 25px;
+        @media ($mobile) {
+            height: 65px;
+            overflow: hidden;
+            &.div-opend {
+                height: auto;
+            }
+        }
         > h4 {  
             font: {
                 size: 19px;
@@ -225,6 +232,26 @@
             padding-bottom: 19.5px;
             border-bottom: 1px solid #CCCCCC;
             margin-bottom: 35px;
+            @extend .trans-effect;
+            @media ($mobile) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:after {
+                    content: "";
+                    display: inline-flex;
+                    background: url('../images/Global/add.png') no-repeat center center;
+                    background-size: cover;
+                    width: 15px;
+                    height: 15px;
+                }
+                &.div-opend {
+                    &:after {
+                        background: url('../images/Global/minus.png') no-repeat center center;
+                        background-size: contain;
+                    }
+                }
+            }
         }   
         .clear-form {
             position: absolute;
@@ -240,6 +267,9 @@
             &:focus,
             &:active {
                 outline: 0;
+            }
+            @media ($mobile) {
+                display: none;
             }
         }
         .form-container {
@@ -273,6 +303,13 @@
         border-radius: 15px;
         padding: 25px 20px;
         margin-bottom: 25px;
+        @media ($mobile) {
+            height: 65px;
+            overflow: hidden;
+            &.div-opend {
+                height: auto;
+            }
+        }
         > h4 {
             font: {
                 size: 19px;
@@ -281,6 +318,26 @@
             padding-bottom: 19.5px;
             border-bottom: 1px solid #CCCCCC;
             margin-bottom: 35px;
+            @extend .trans-effect;
+            @media ($mobile) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:after {
+                    content: "";
+                    display: inline-flex;
+                    background: url('../images/Global/add.png') no-repeat center center;
+                    background-size: cover;
+                    width: 15px;
+                    height: 15px;
+                }
+                &.div-opend {
+                    &:after {
+                        background: url('../images/Global/minus.png') no-repeat center center;
+                        background-size: contain;
+                    }
+                }
+            }
         }
         ul {
             padding: 0;

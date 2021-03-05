@@ -3,6 +3,9 @@
     margin-bottom: 30px;
     .detailed-header-options {
         padding: 150px 110px 80px;
+        @media ($mobile) {
+            padding: 100px 15px 50px;
+        }
         .detailed-header-title {
             font: {
                 size: 21px;
@@ -16,11 +19,18 @@
             border: 1px solid $white-color;
             margin-bottom: 0;
             border-bottom: none;
+            @media ($mobile) {
+                font-size: 18px;
+                padding: 10px 25px;
+            }
         }
         .all-options-of-detailed-header {
             background-color: $white-color;
             padding: 30px 90px;
             border-radius: 15px 0 15px 15px;
+            @media ($mobile) {
+                padding: 20px;
+            }
             form {
                 label {
                     color: $gray-color-5;
@@ -55,6 +65,9 @@
                     &.search-btn {
                         width: 100%;
                         background-image: linear-gradient(to bottom right,  #25A84C, #72BF44);
+                        @media ($mobile) {
+                            height: 35px;
+                        }
                     }
                     &.bs-placeholder {
                         &:hover {

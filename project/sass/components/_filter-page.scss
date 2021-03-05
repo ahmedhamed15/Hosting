@@ -3,23 +3,45 @@
     background-color: $white-color;
     border-radius: 15px;
     padding: 35px;
+    @media ($mobile) {
+        padding: 16px;
+    }
     .row {
         justify-content: center;
         align-items: center;
+        > div {
+            @media ($mobile) {
+                flex: 0 0 50%;
+                max-width: 50%;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
     .time-wrapper {
         padding-right: 60px;
+        @media ($mobile) {
+            padding: 0;
+        }
         .time-label {
             font: {
                 size: 21px;
                 weight: normal
             }
             margin-bottom: 11px;
+            @media ($mobile) {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
         }
         .time-value {
             font: {
                 size: 18px;
                 weight: 300
+            }
+            @media ($mobile) {
+                font-size: 15px;
             }
         }
     }
@@ -29,6 +51,10 @@
         font: {
             size: 20px;
             weight: normal;
+        }
+        @media ($mobile) {
+            padding: 5px 38px;
+            font-size: 17px;
         }
     }
 }
@@ -41,6 +67,15 @@
     background-color: $white-color;
     margin-top: 40px;
     margin-bottom: 32px;
+    > div.row {
+        > div {
+            &:not(:last-child) {
+                @media ($mobile) {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
     &.without-margin-top {
         margin-top: 0;
     }
@@ -53,6 +88,10 @@
         font: {
             size: 22px;
             weight: normal
+        }
+        @media ($mobile) {
+            font-size: 15px;
+            padding: 5px 15px;
         }
         &.active,
         &:hover {
@@ -90,6 +129,9 @@
 // Pagination
 .hosting-pagination {
     margin-top: 50px;
+    @media ($mobile) {
+        margin-top: 30px;
+    }
     .pagination {
         justify-content: center;
         @media ($mobile) {
@@ -170,6 +212,14 @@
     padding: 24px 16px;
     background-color: $white-color;
     border-radius: 15px;
+    @media ($mobile) {
+        height: 65px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        &.div-opend {
+            height: auto;
+        }
+    }
     .filter-title {
         font: {
             size: 17px;
@@ -178,6 +228,26 @@
         border-bottom: 1px solid #CCCCCC;
         padding-bottom: 20px;
         margin-bottom: 20px;
+        @extend .trans-effect;
+        @media ($mobile) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:after {
+                content: "";
+                display: inline-flex;
+                background: url('../images/Global/add.png') no-repeat center center;
+                background-size: cover;
+                width: 15px;
+                height: 15px;
+            }
+            &.div-opend {
+                &:after {
+                    background: url('../images/Global/minus.png') no-repeat center center;
+                    background-size: contain;
+                }
+            }
+        }
     }
     form {
         label {
